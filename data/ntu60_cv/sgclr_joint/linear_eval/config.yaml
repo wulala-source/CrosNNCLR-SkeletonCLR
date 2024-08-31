@@ -1,0 +1,66 @@
+# command line: main.py linear_evaluation --config config/ntu60/linear_eval/linear_eval_sgclr_xview_joint.yaml --weights data/ntu60_cv/sgclr_joint/pretext/epoch400_model.pt
+
+base_lr: 3.0
+batch_size: 128
+config: config/ntu60/linear_eval/linear_eval_sgclr_xview_joint.yaml
+context: true
+cross_epoch: 1000000.0
+debug: false
+device:
+- 2
+eval_interval: 5
+ignore_weights:
+- encoder_q.fc
+- encoder_k
+- queue
+log_interval: 100
+model: net.sgclr.SGCLR
+model_args:
+    base_encoder: net.st_gcn.Model
+    dropout: 0.5
+    edge_importance_weighting: true
+    graph_args:
+        layout: ntu-rgb+d
+        strategy: spatial
+    hidden_channels: 16
+    hidden_dim: 256
+    in_channels: 3
+    num_class: 60
+    pretrain: false
+nesterov: false
+num_epoch: 100
+num_worker: 2
+optimizer: SGD
+pavi_log: false
+phase: train
+print_log: true
+save_interval: -1
+save_log: true
+save_result: true
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 80
+test_batch_size: 128
+test_feeder: feeder.ntu_feeder.Feeder_single
+test_feeder_args:
+    data_path: /home/zhangxuelian/code1/ntu60_frame50/xview/val_position.npy
+    label_path: /home/zhangxuelian/code1/ntu60_frame50/xview/val_label.pkl
+    mmap: true
+    shear_amplitude: -1
+    temperal_padding_ratio: -1
+topk: 1
+train_feeder: feeder.ntu_feeder.Feeder_single
+train_feeder_args:
+    data_path: /home/zhangxuelian/code1/ntu60_frame50/xview/train_position.npy
+    label_path: /home/zhangxuelian/code1/ntu60_frame50/xview/train_label.pkl
+    mmap: true
+    shear_amplitude: -1
+    temperal_padding_ratio: -1
+use_gpu: true
+view: joint
+weight_decay: 0.0
+weights: data/ntu60_cv/sgclr_joint/pretext/epoch400_model.pt
+work_dir: ./data/ntu60_cv/sgclr_joint/linear_eval

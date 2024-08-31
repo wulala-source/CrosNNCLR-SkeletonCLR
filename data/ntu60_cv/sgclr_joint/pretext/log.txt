@@ -1,0 +1,2087 @@
+[05.14.22|20:23:25] Parameters:
+{'work_dir': './data/ntu60_cv/sgclr_joint/pretext', 'config': 'config/ntu60/pretext/pretext_sgclr_xview_joint.yaml', 'phase': 'train', 'save_result': True, 'start_epoch': 0, 'num_epoch': 400, 'use_gpu': True, 'device': [2], 'log_interval': 100, 'save_interval': 5, 'eval_interval': -1, 'save_log': True, 'print_log': True, 'pavi_log': False, 'train_feeder': 'feeder.ntu_feeder.Feeder_dual', 'test_feeder': 'feeder.feeder', 'num_worker': 2, 'train_feeder_args': {'data_path': '/home/zhangxuelian/code1/ntu60_frame50/xview/train_position.npy', 'label_path': '/home/zhangxuelian/code1/ntu60_frame50/xview/train_label.pkl', 'shear_amplitude': 0.5, 'temperal_padding_ratio': 6, 'mmap': True}, 'test_feeder_args': {}, 'batch_size': 128, 'test_batch_size': 128, 'debug': False, 'model': 'net.sgclr.SGCLR', 'model_args': {'base_encoder': 'net.st_gcn.Model', 'pretrain': True, 'feature_dim': 128, 'queue_size': 32768, 'momentum': 0.999, 'Temperature': 0.07, 'mlp': True, 'in_channels': 3, 'hidden_channels': 16, 'hidden_dim': 256, 'num_class': 60, 'dropout': 0.5, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}, 'edge_importance_weighting': True}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [250], 'optimizer': 'SGD', 'nesterov': False, 'weight_decay': 0.0001, 'view': 'joint', 'cross_epoch': 150, 'context': True, 'topk': 1}
+
+[05.14.22|20:23:25] ---------- Networks initialized -------------
+[05.14.22|20:23:25] [Network] Total number of parameters : 1.840 M
+[05.14.22|20:23:25] -----------------------------------------------
+[05.14.22|20:23:25] Training epoch: 1
+[05.14.22|20:25:17] Parameters:
+{'work_dir': './data/ntu60_cv/sgclr_joint/pretext', 'config': 'config/ntu60/pretext/pretext_sgclr_xview_joint.yaml', 'phase': 'train', 'save_result': True, 'start_epoch': 0, 'num_epoch': 400, 'use_gpu': True, 'device': [2], 'log_interval': 100, 'save_interval': 5, 'eval_interval': -1, 'save_log': True, 'print_log': True, 'pavi_log': False, 'train_feeder': 'feeder.ntu_feeder.Feeder_dual', 'test_feeder': 'feeder.feeder', 'num_worker': 2, 'train_feeder_args': {'data_path': '/home/zhangxuelian/code1/ntu60_frame50/xview/train_position.npy', 'label_path': '/home/zhangxuelian/code1/ntu60_frame50/xview/train_label.pkl', 'shear_amplitude': 0.5, 'temperal_padding_ratio': 6, 'mmap': True}, 'test_feeder_args': {}, 'batch_size': 128, 'test_batch_size': 128, 'debug': False, 'model': 'net.sgclr.SGCLR', 'model_args': {'base_encoder': 'net.st_gcn.Model', 'pretrain': True, 'feature_dim': 128, 'queue_size': 32768, 'momentum': 0.999, 'Temperature': 0.07, 'mlp': True, 'in_channels': 3, 'hidden_channels': 16, 'hidden_dim': 256, 'num_class': 60, 'dropout': 0.5, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}, 'edge_importance_weighting': True}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [250], 'optimizer': 'SGD', 'nesterov': False, 'weight_decay': 0.0001, 'view': 'joint', 'cross_epoch': 150, 'context': True, 'topk': 1}
+
+[05.14.22|20:25:17] ---------- Networks initialized -------------
+[05.14.22|20:25:17] [Network] Total number of parameters : 1.840 M
+[05.14.22|20:25:17] -----------------------------------------------
+[05.14.22|20:25:17] Training epoch: 1
+[05.14.22|20:25:18] 	Iter 0 Done. | loss: 13.6733 | lr: 0.100000
+[05.14.22|20:25:42] 	Iter 100 Done. | loss: 9.2075 | lr: 0.100000
+[05.14.22|20:26:06] 	Iter 200 Done. | loss: 9.7172 | lr: 0.100000
+[05.14.22|20:27:15] Parameters:
+{'work_dir': './data/ntu60_cv/sgclr_joint/pretext', 'config': 'config/ntu60/pretext/pretext_sgclr_xview_joint.yaml', 'phase': 'train', 'save_result': True, 'start_epoch': 151, 'num_epoch': 400, 'use_gpu': True, 'device': [2], 'log_interval': 100, 'save_interval': 5, 'eval_interval': -1, 'save_log': True, 'print_log': True, 'pavi_log': False, 'train_feeder': 'feeder.ntu_feeder.Feeder_dual', 'test_feeder': 'feeder.feeder', 'num_worker': 2, 'train_feeder_args': {'data_path': '/home/zhangxuelian/code1/ntu60_frame50/xview/train_position.npy', 'label_path': '/home/zhangxuelian/code1/ntu60_frame50/xview/train_label.pkl', 'shear_amplitude': 0.5, 'temperal_padding_ratio': 6, 'mmap': True}, 'test_feeder_args': {}, 'batch_size': 128, 'test_batch_size': 128, 'debug': False, 'model': 'net.sgclr.SGCLR', 'model_args': {'base_encoder': 'net.st_gcn.Model', 'pretrain': True, 'feature_dim': 128, 'queue_size': 32768, 'momentum': 0.999, 'Temperature': 0.07, 'mlp': True, 'in_channels': 3, 'hidden_channels': 16, 'hidden_dim': 256, 'num_class': 60, 'dropout': 0.5, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}, 'edge_importance_weighting': True}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [250], 'optimizer': 'SGD', 'nesterov': False, 'weight_decay': 0.0001, 'view': 'joint', 'cross_epoch': 150, 'context': True, 'topk': 1}
+
+[05.14.22|20:27:15] ---------- Networks initialized -------------
+[05.14.22|20:27:15] [Network] Total number of parameters : 1.840 M
+[05.14.22|20:27:15] -----------------------------------------------
+[05.14.22|20:27:15] Training epoch: 152
+[05.14.22|20:27:17] 	Iter 44400 Done. | loss: 6.5768 | lr: 0.100000
+[05.14.22|20:28:55] Parameters:
+{'work_dir': './data/ntu60_cv/sgclr_joint/pretext', 'config': 'config/ntu60/pretext/pretext_sgclr_xview_joint.yaml', 'phase': 'train', 'save_result': True, 'start_epoch': 0, 'num_epoch': 400, 'use_gpu': True, 'device': [2], 'log_interval': 100, 'save_interval': 5, 'eval_interval': -1, 'save_log': True, 'print_log': True, 'pavi_log': False, 'train_feeder': 'feeder.ntu_feeder.Feeder_dual', 'test_feeder': 'feeder.feeder', 'num_worker': 2, 'train_feeder_args': {'data_path': '/home/zhangxuelian/code1/ntu60_frame50/xview/train_position.npy', 'label_path': '/home/zhangxuelian/code1/ntu60_frame50/xview/train_label.pkl', 'shear_amplitude': 0.5, 'temperal_padding_ratio': 6, 'mmap': True}, 'test_feeder_args': {}, 'batch_size': 128, 'test_batch_size': 128, 'debug': False, 'model': 'net.sgclr.SGCLR', 'model_args': {'base_encoder': 'net.st_gcn.Model', 'pretrain': True, 'feature_dim': 128, 'queue_size': 32768, 'momentum': 0.999, 'Temperature': 0.07, 'mlp': True, 'in_channels': 3, 'hidden_channels': 16, 'hidden_dim': 256, 'num_class': 60, 'dropout': 0.5, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}, 'edge_importance_weighting': True}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [250], 'optimizer': 'SGD', 'nesterov': False, 'weight_decay': 0.0001, 'view': 'joint', 'cross_epoch': 150, 'context': True, 'topk': 1}
+
+[05.14.22|20:28:55] ---------- Networks initialized -------------
+[05.14.22|20:28:55] [Network] Total number of parameters : 1.840 M
+[05.14.22|20:28:55] -----------------------------------------------
+[05.14.22|20:28:55] Training epoch: 1
+[05.14.22|20:28:55] 	Iter 0 Done. | loss: 13.6733 | lr: 0.100000
+[05.14.22|20:29:19] 	Iter 100 Done. | loss: 9.2075 | lr: 0.100000
+[05.14.22|20:29:43] 	Iter 200 Done. | loss: 9.7172 | lr: 0.100000
+[05.14.22|20:30:06] 	train_mean_loss: 9.195353555030563
+[05.14.22|20:30:06] Training epoch: 2
+[05.14.22|20:30:08] 	Iter 300 Done. | loss: 9.6415 | lr: 0.100000
+[05.14.22|20:30:32] 	Iter 400 Done. | loss: 9.2258 | lr: 0.100000
+[05.14.22|20:30:57] 	Iter 500 Done. | loss: 8.8552 | lr: 0.100000
+[05.14.22|20:31:18] 	train_mean_loss: 9.107636737174728
+[05.14.22|20:31:18] Training epoch: 3
+[05.14.22|20:31:22] 	Iter 600 Done. | loss: 8.7672 | lr: 0.100000
+[05.14.22|20:31:47] 	Iter 700 Done. | loss: 8.7950 | lr: 0.100000
+[05.14.22|20:32:11] 	Iter 800 Done. | loss: 8.8952 | lr: 0.100000
+[05.14.22|20:32:31] 	train_mean_loss: 8.850366942736567
+[05.14.22|20:32:31] Training epoch: 4
+[05.14.22|20:32:36] 	Iter 900 Done. | loss: 8.9026 | lr: 0.100000
+[05.14.22|20:33:01] 	Iter 1000 Done. | loss: 9.1746 | lr: 0.100000
+[05.14.22|20:33:26] 	Iter 1100 Done. | loss: 8.9773 | lr: 0.100000
+[05.14.22|20:33:44] 	train_mean_loss: 9.043717204308024
+[05.14.22|20:33:44] Training epoch: 5
+[05.14.22|20:33:51] 	Iter 1200 Done. | loss: 9.3659 | lr: 0.100000
+[05.14.22|20:34:16] 	Iter 1300 Done. | loss: 9.2197 | lr: 0.100000
+[05.14.22|20:34:40] 	Iter 1400 Done. | loss: 9.0919 | lr: 0.100000
+[05.14.22|20:34:58] 	train_mean_loss: 9.219364451713302
+[05.14.22|20:34:58] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch5_model.pt.
+[05.14.22|20:34:58] Training epoch: 6
+[05.14.22|20:35:05] 	Iter 1500 Done. | loss: 9.0848 | lr: 0.100000
+[05.14.22|20:35:30] 	Iter 1600 Done. | loss: 8.8709 | lr: 0.100000
+[05.14.22|20:35:55] 	Iter 1700 Done. | loss: 8.8388 | lr: 0.100000
+[05.14.22|20:36:11] 	train_mean_loss: 8.902730294636317
+[05.14.22|20:36:11] Training epoch: 7
+[05.14.22|20:36:20] 	Iter 1800 Done. | loss: 8.7174 | lr: 0.100000
+[05.14.22|20:36:45] 	Iter 1900 Done. | loss: 8.3073 | lr: 0.100000
+[05.14.22|20:37:10] 	Iter 2000 Done. | loss: 8.5231 | lr: 0.100000
+[05.14.22|20:37:24] 	train_mean_loss: 8.528131436328499
+[05.14.22|20:37:24] Training epoch: 8
+[05.14.22|20:37:35] 	Iter 2100 Done. | loss: 8.4581 | lr: 0.100000
+[05.14.22|20:38:00] 	Iter 2200 Done. | loss: 8.5962 | lr: 0.100000
+[05.14.22|20:38:25] 	Iter 2300 Done. | loss: 8.6905 | lr: 0.100000
+[05.14.22|20:38:37] 	train_mean_loss: 8.337885507920973
+[05.14.22|20:38:37] Training epoch: 9
+[05.14.22|20:38:50] 	Iter 2400 Done. | loss: 7.9292 | lr: 0.100000
+[05.14.22|20:39:14] 	Iter 2500 Done. | loss: 8.6147 | lr: 0.100000
+[05.14.22|20:39:39] 	Iter 2600 Done. | loss: 8.8196 | lr: 0.100000
+[05.14.22|20:39:50] 	train_mean_loss: 8.44484653278273
+[05.14.22|20:39:50] Training epoch: 10
+[05.14.22|20:40:04] 	Iter 2700 Done. | loss: 8.8175 | lr: 0.100000
+[05.14.22|20:40:29] 	Iter 2800 Done. | loss: 8.6058 | lr: 0.100000
+[05.14.22|20:40:53] 	Iter 2900 Done. | loss: 9.3063 | lr: 0.100000
+[05.14.22|20:41:03] 	train_mean_loss: 8.747044383263102
+[05.14.22|20:41:03] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch10_model.pt.
+[05.14.22|20:41:03] Training epoch: 11
+[05.14.22|20:41:19] 	Iter 3000 Done. | loss: 8.5849 | lr: 0.100000
+[05.14.22|20:41:43] 	Iter 3100 Done. | loss: 8.2282 | lr: 0.100000
+[05.14.22|20:42:08] 	Iter 3200 Done. | loss: 7.9175 | lr: 0.100000
+[05.14.22|20:42:16] 	train_mean_loss: 8.276216075533913
+[05.14.22|20:42:16] Training epoch: 12
+[05.14.22|20:42:33] 	Iter 3300 Done. | loss: 7.6494 | lr: 0.100000
+[05.14.22|20:42:57] 	Iter 3400 Done. | loss: 7.7829 | lr: 0.100000
+[05.14.22|20:43:22] 	Iter 3500 Done. | loss: 7.5655 | lr: 0.100000
+[05.14.22|20:43:29] 	train_mean_loss: 7.649629528019704
+[05.14.22|20:43:29] Training epoch: 13
+[05.14.22|20:43:47] 	Iter 3600 Done. | loss: 7.5478 | lr: 0.100000
+[05.14.22|20:44:12] 	Iter 3700 Done. | loss: 7.5454 | lr: 0.100000
+[05.14.22|20:44:36] 	Iter 3800 Done. | loss: 7.5244 | lr: 0.100000
+[05.14.22|20:44:41] 	train_mean_loss: 7.576854934497756
+[05.14.22|20:44:41] Training epoch: 14
+[05.14.22|20:45:01] 	Iter 3900 Done. | loss: 7.5906 | lr: 0.100000
+[05.14.22|20:45:26] 	Iter 4000 Done. | loss: 7.5369 | lr: 0.100000
+[05.14.22|20:45:50] 	Iter 4100 Done. | loss: 7.6699 | lr: 0.100000
+[05.14.22|20:45:54] 	train_mean_loss: 7.566448443600921
+[05.14.22|20:45:54] Training epoch: 15
+[05.14.22|20:46:15] 	Iter 4200 Done. | loss: 7.5316 | lr: 0.100000
+[05.14.22|20:46:39] 	Iter 4300 Done. | loss: 7.5261 | lr: 0.100000
+[05.14.22|20:47:04] 	Iter 4400 Done. | loss: 7.5678 | lr: 0.100000
+[05.14.22|20:47:06] 	train_mean_loss: 7.54745197133953
+[05.14.22|20:47:06] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch15_model.pt.
+[05.14.22|20:47:06] Training epoch: 16
+[05.14.22|20:47:29] 	Iter 4500 Done. | loss: 7.5385 | lr: 0.100000
+[05.14.22|20:47:53] 	Iter 4600 Done. | loss: 7.5494 | lr: 0.100000
+[05.14.22|20:48:18] 	Iter 4700 Done. | loss: 7.6518 | lr: 0.100000
+[05.14.22|20:48:19] 	train_mean_loss: 7.555063935364185
+[05.14.22|20:48:19] Training epoch: 17
+[05.14.22|20:48:43] 	Iter 4800 Done. | loss: 7.5347 | lr: 0.100000
+[05.14.22|20:49:08] 	Iter 4900 Done. | loss: 7.7294 | lr: 0.100000
+[05.14.22|20:49:32] 	train_mean_loss: 7.6488366143233115
+[05.14.22|20:49:32] Training epoch: 18
+[05.14.22|20:49:33] 	Iter 5000 Done. | loss: 7.6752 | lr: 0.100000
+[05.14.22|20:49:57] 	Iter 5100 Done. | loss: 7.7440 | lr: 0.100000
+[05.14.22|20:50:22] 	Iter 5200 Done. | loss: 7.7789 | lr: 0.100000
+[05.14.22|20:50:45] 	train_mean_loss: 7.784880091543911
+[05.14.22|20:50:45] Training epoch: 19
+[05.14.22|20:50:47] 	Iter 5300 Done. | loss: 7.8494 | lr: 0.100000
+[05.14.22|20:51:12] 	Iter 5400 Done. | loss: 7.9714 | lr: 0.100000
+[05.14.22|20:51:36] 	Iter 5500 Done. | loss: 7.9628 | lr: 0.100000
+[05.14.22|20:51:57] 	train_mean_loss: 7.931335593567414
+[05.14.22|20:51:57] Training epoch: 20
+[05.14.22|20:52:01] 	Iter 5600 Done. | loss: 8.0306 | lr: 0.100000
+[05.14.22|20:52:26] 	Iter 5700 Done. | loss: 7.9748 | lr: 0.100000
+[05.14.22|20:52:50] 	Iter 5800 Done. | loss: 8.1068 | lr: 0.100000
+[05.14.22|20:53:10] 	train_mean_loss: 8.075539081275057
+[05.14.22|20:53:10] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch20_model.pt.
+[05.14.22|20:53:10] Training epoch: 21
+[05.14.22|20:53:15] 	Iter 5900 Done. | loss: 8.1604 | lr: 0.100000
+[05.14.22|20:53:40] 	Iter 6000 Done. | loss: 8.1039 | lr: 0.100000
+[05.14.22|20:54:05] 	Iter 6100 Done. | loss: 8.0958 | lr: 0.100000
+[05.14.22|20:54:23] 	train_mean_loss: 8.15203721831445
+[05.14.22|20:54:23] Training epoch: 22
+[05.14.22|20:54:30] 	Iter 6200 Done. | loss: 8.0311 | lr: 0.100000
+[05.14.22|20:54:55] 	Iter 6300 Done. | loss: 8.0399 | lr: 0.100000
+[05.14.22|20:55:19] 	Iter 6400 Done. | loss: 8.0361 | lr: 0.100000
+[05.14.22|20:55:36] 	train_mean_loss: 8.006998279467732
+[05.14.22|20:55:36] Training epoch: 23
+[05.14.22|20:55:44] 	Iter 6500 Done. | loss: 7.7850 | lr: 0.100000
+[05.14.22|20:56:09] 	Iter 6600 Done. | loss: 7.7580 | lr: 0.100000
+[05.14.22|20:56:34] 	Iter 6700 Done. | loss: 7.5399 | lr: 0.100000
+[05.14.22|20:56:49] 	train_mean_loss: 7.680252313613892
+[05.14.22|20:56:49] Training epoch: 24
+[05.14.22|20:56:59] 	Iter 6800 Done. | loss: 7.6107 | lr: 0.100000
+[05.14.22|20:57:23] 	Iter 6900 Done. | loss: 7.4144 | lr: 0.100000
+[05.14.22|20:57:48] 	Iter 7000 Done. | loss: 7.5751 | lr: 0.100000
+[05.14.22|20:58:02] 	train_mean_loss: 7.499082547466771
+[05.14.22|20:58:02] Training epoch: 25
+[05.14.22|20:58:13] 	Iter 7100 Done. | loss: 7.4301 | lr: 0.100000
+[05.14.22|20:58:38] 	Iter 7200 Done. | loss: 7.3322 | lr: 0.100000
+[05.14.22|20:59:03] 	Iter 7300 Done. | loss: 7.4046 | lr: 0.100000
+[05.14.22|20:59:15] 	train_mean_loss: 7.409570551242958
+[05.14.22|20:59:15] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch25_model.pt.
+[05.14.22|20:59:15] Training epoch: 26
+[05.14.22|20:59:28] 	Iter 7400 Done. | loss: 7.4242 | lr: 0.100000
+[05.14.22|20:59:53] 	Iter 7500 Done. | loss: 7.4439 | lr: 0.100000
+[05.14.22|21:00:18] 	Iter 7600 Done. | loss: 7.2237 | lr: 0.100000
+[05.14.22|21:00:28] 	train_mean_loss: 7.309828302487224
+[05.14.22|21:00:28] Training epoch: 27
+[05.14.22|21:00:43] 	Iter 7700 Done. | loss: 7.2591 | lr: 0.100000
+[05.14.22|21:01:08] 	Iter 7800 Done. | loss: 7.2469 | lr: 0.100000
+[05.14.22|21:01:32] 	Iter 7900 Done. | loss: 7.4387 | lr: 0.100000
+[05.14.22|21:01:41] 	train_mean_loss: 7.280373873353815
+[05.14.22|21:01:41] Training epoch: 28
+[05.14.22|21:01:58] 	Iter 8000 Done. | loss: 7.3277 | lr: 0.100000
+[05.14.22|21:02:22] 	Iter 8100 Done. | loss: 7.3261 | lr: 0.100000
+[05.14.22|21:02:47] 	Iter 8200 Done. | loss: 7.0912 | lr: 0.100000
+[05.14.22|21:02:54] 	train_mean_loss: 7.249120240308801
+[05.14.22|21:02:54] Training epoch: 29
+[05.14.22|21:03:12] 	Iter 8300 Done. | loss: 6.9324 | lr: 0.100000
+[05.14.22|21:03:36] 	Iter 8400 Done. | loss: 6.9411 | lr: 0.100000
+[05.14.22|21:04:01] 	Iter 8500 Done. | loss: 6.8738 | lr: 0.100000
+[05.14.22|21:04:08] 	train_mean_loss: 6.92379616717903
+[05.14.22|21:04:08] Training epoch: 30
+[05.14.22|21:04:27] 	Iter 8600 Done. | loss: 6.8393 | lr: 0.100000
+[05.14.22|21:04:51] 	Iter 8700 Done. | loss: 6.8527 | lr: 0.100000
+[05.14.22|21:05:16] 	Iter 8800 Done. | loss: 6.6956 | lr: 0.100000
+[05.14.22|21:05:21] 	train_mean_loss: 6.856190812831023
+[05.14.22|21:05:21] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch30_model.pt.
+[05.14.22|21:05:21] Training epoch: 31
+[05.14.22|21:05:41] 	Iter 8900 Done. | loss: 6.8784 | lr: 0.100000
+[05.14.22|21:06:06] 	Iter 9000 Done. | loss: 6.6914 | lr: 0.100000
+[05.14.22|21:06:31] 	Iter 9100 Done. | loss: 6.8957 | lr: 0.100000
+[05.14.22|21:06:34] 	train_mean_loss: 6.8527230000009345
+[05.14.22|21:06:34] Training epoch: 32
+[05.14.22|21:06:56] 	Iter 9200 Done. | loss: 6.4920 | lr: 0.100000
+[05.14.22|21:07:21] 	Iter 9300 Done. | loss: 6.4963 | lr: 0.100000
+[05.14.22|21:07:45] 	Iter 9400 Done. | loss: 6.3925 | lr: 0.100000
+[05.14.22|21:07:47] 	train_mean_loss: 6.569520608097518
+[05.14.22|21:07:47] Training epoch: 33
+[05.14.22|21:08:10] 	Iter 9500 Done. | loss: 6.4847 | lr: 0.100000
+[05.14.22|21:08:35] 	Iter 9600 Done. | loss: 6.4355 | lr: 0.100000
+[05.14.22|21:09:00] 	Iter 9700 Done. | loss: 6.2185 | lr: 0.100000
+[05.14.22|21:09:00] 	train_mean_loss: 6.3573522746157485
+[05.14.22|21:09:00] Training epoch: 34
+[05.14.22|21:09:25] 	Iter 9800 Done. | loss: 6.3479 | lr: 0.100000
+[05.14.22|21:09:50] 	Iter 9900 Done. | loss: 6.2611 | lr: 0.100000
+[05.14.22|21:10:13] 	train_mean_loss: 6.289201275831988
+[05.14.22|21:10:13] Training epoch: 35
+[05.14.22|21:10:15] 	Iter 10000 Done. | loss: 6.2145 | lr: 0.100000
+[05.14.22|21:10:40] 	Iter 10100 Done. | loss: 6.1819 | lr: 0.100000
+[05.14.22|21:11:04] 	Iter 10200 Done. | loss: 6.2854 | lr: 0.100000
+[05.14.22|21:11:26] 	train_mean_loss: 6.26108608440477
+[05.14.22|21:11:26] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch35_model.pt.
+[05.14.22|21:11:26] Training epoch: 36
+[05.14.22|21:11:29] 	Iter 10300 Done. | loss: 6.2560 | lr: 0.100000
+[05.14.22|21:11:54] 	Iter 10400 Done. | loss: 6.1826 | lr: 0.100000
+[05.14.22|21:12:18] 	Iter 10500 Done. | loss: 6.3543 | lr: 0.100000
+[05.14.22|21:12:39] 	train_mean_loss: 6.237426942708541
+[05.14.22|21:12:39] Training epoch: 37
+[05.14.22|21:12:43] 	Iter 10600 Done. | loss: 6.2387 | lr: 0.100000
+[05.14.22|21:13:08] 	Iter 10700 Done. | loss: 6.1966 | lr: 0.100000
+[05.14.22|21:13:33] 	Iter 10800 Done. | loss: 6.1351 | lr: 0.100000
+[05.14.22|21:13:52] 	train_mean_loss: 6.1692854822898395
+[05.14.22|21:13:52] Training epoch: 38
+[05.14.22|21:13:58] 	Iter 10900 Done. | loss: 6.1529 | lr: 0.100000
+[05.14.22|21:14:23] 	Iter 11000 Done. | loss: 5.9832 | lr: 0.100000
+[05.14.22|21:14:48] 	Iter 11100 Done. | loss: 6.0682 | lr: 0.100000
+[05.14.22|21:15:05] 	train_mean_loss: 6.077412752878098
+[05.14.22|21:15:05] Training epoch: 39
+[05.14.22|21:15:13] 	Iter 11200 Done. | loss: 6.0666 | lr: 0.100000
+[05.14.22|21:15:38] 	Iter 11300 Done. | loss: 5.9391 | lr: 0.100000
+[05.14.22|21:16:03] 	Iter 11400 Done. | loss: 6.0454 | lr: 0.100000
+[05.14.22|21:16:19] 	train_mean_loss: 5.984784309555884
+[05.14.22|21:16:19] Training epoch: 40
+[05.14.22|21:16:28] 	Iter 11500 Done. | loss: 5.8861 | lr: 0.100000
+[05.14.22|21:16:52] 	Iter 11600 Done. | loss: 5.9017 | lr: 0.100000
+[05.14.22|21:17:17] 	Iter 11700 Done. | loss: 5.8054 | lr: 0.100000
+[05.14.22|21:17:32] 	train_mean_loss: 5.916673897075004
+[05.14.22|21:17:32] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch40_model.pt.
+[05.14.22|21:17:32] Training epoch: 41
+[05.14.22|21:17:42] 	Iter 11800 Done. | loss: 5.9649 | lr: 0.100000
+[05.14.22|21:18:07] 	Iter 11900 Done. | loss: 6.0217 | lr: 0.100000
+[05.14.22|21:18:32] 	Iter 12000 Done. | loss: 5.9204 | lr: 0.100000
+[05.14.22|21:18:45] 	train_mean_loss: 5.8805562914634235
+[05.14.22|21:18:45] Training epoch: 42
+[05.14.22|21:18:57] 	Iter 12100 Done. | loss: 5.8732 | lr: 0.100000
+[05.14.22|21:19:21] 	Iter 12200 Done. | loss: 5.7763 | lr: 0.100000
+[05.14.22|21:19:46] 	Iter 12300 Done. | loss: 5.9635 | lr: 0.100000
+[05.14.22|21:19:57] 	train_mean_loss: 5.804419593746159
+[05.14.22|21:19:57] Training epoch: 43
+[05.14.22|21:20:11] 	Iter 12400 Done. | loss: 5.8914 | lr: 0.100000
+[05.14.22|21:20:35] 	Iter 12500 Done. | loss: 5.6561 | lr: 0.100000
+[05.14.22|21:21:00] 	Iter 12600 Done. | loss: 5.5653 | lr: 0.100000
+[05.14.22|21:21:10] 	train_mean_loss: 5.719277641400188
+[05.14.22|21:21:10] Training epoch: 44
+[05.14.22|21:21:25] 	Iter 12700 Done. | loss: 5.7629 | lr: 0.100000
+[05.14.22|21:21:50] 	Iter 12800 Done. | loss: 5.6143 | lr: 0.100000
+[05.14.22|21:22:15] 	Iter 12900 Done. | loss: 5.6902 | lr: 0.100000
+[05.14.22|21:22:23] 	train_mean_loss: 5.680879505313173
+[05.14.22|21:22:23] Training epoch: 45
+[05.14.22|21:22:40] 	Iter 13000 Done. | loss: 5.6115 | lr: 0.100000
+[05.14.22|21:23:04] 	Iter 13100 Done. | loss: 5.5442 | lr: 0.100000
+[05.14.22|21:23:29] 	Iter 13200 Done. | loss: 5.6606 | lr: 0.100000
+[05.14.22|21:23:36] 	train_mean_loss: 5.657190006606433
+[05.14.22|21:23:36] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch45_model.pt.
+[05.14.22|21:23:36] Training epoch: 46
+[05.14.22|21:23:54] 	Iter 13300 Done. | loss: 5.6954 | lr: 0.100000
+[05.14.22|21:24:18] 	Iter 13400 Done. | loss: 5.6688 | lr: 0.100000
+[05.14.22|21:24:43] 	Iter 13500 Done. | loss: 5.5729 | lr: 0.100000
+[05.14.22|21:24:48] 	train_mean_loss: 5.600907085704154
+[05.14.22|21:24:48] Training epoch: 47
+[05.14.22|21:25:08] 	Iter 13600 Done. | loss: 5.6184 | lr: 0.100000
+[05.14.22|21:25:33] 	Iter 13700 Done. | loss: 5.5887 | lr: 0.100000
+[05.14.22|21:25:57] 	Iter 13800 Done. | loss: 5.6207 | lr: 0.100000
+[05.14.22|21:26:02] 	train_mean_loss: 5.601893543386135
+[05.14.22|21:26:02] Training epoch: 48
+[05.14.22|21:26:22] 	Iter 13900 Done. | loss: 5.6266 | lr: 0.100000
+[05.14.22|21:26:47] 	Iter 14000 Done. | loss: 5.7363 | lr: 0.100000
+[05.14.22|21:27:12] 	Iter 14100 Done. | loss: 5.3893 | lr: 0.100000
+[05.14.22|21:27:15] 	train_mean_loss: 5.58358300137682
+[05.14.22|21:27:15] Training epoch: 49
+[05.14.22|21:27:37] 	Iter 14200 Done. | loss: 5.5535 | lr: 0.100000
+[05.14.22|21:28:02] 	Iter 14300 Done. | loss: 5.4335 | lr: 0.100000
+[05.14.22|21:28:27] 	Iter 14400 Done. | loss: 5.4755 | lr: 0.100000
+[05.14.22|21:28:28] 	train_mean_loss: 5.509375059685739
+[05.14.22|21:28:28] Training epoch: 50
+[05.14.22|21:28:52] 	Iter 14500 Done. | loss: 5.4373 | lr: 0.100000
+[05.14.22|21:29:16] 	Iter 14600 Done. | loss: 5.4331 | lr: 0.100000
+[05.14.22|21:29:41] 	train_mean_loss: 5.469559474867218
+[05.14.22|21:29:41] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch50_model.pt.
+[05.14.22|21:29:41] Training epoch: 51
+[05.14.22|21:29:41] 	Iter 14700 Done. | loss: 5.4448 | lr: 0.100000
+[05.14.22|21:30:06] 	Iter 14800 Done. | loss: 5.4316 | lr: 0.100000
+[05.14.22|21:30:30] 	Iter 14900 Done. | loss: 5.5001 | lr: 0.100000
+[05.14.22|21:30:53] 	train_mean_loss: 5.472617324517698
+[05.14.22|21:30:53] Training epoch: 52
+[05.14.22|21:30:55] 	Iter 15000 Done. | loss: 5.4384 | lr: 0.100000
+[05.14.22|21:31:20] 	Iter 15100 Done. | loss: 5.5154 | lr: 0.100000
+[05.14.22|21:31:44] 	Iter 15200 Done. | loss: 5.2714 | lr: 0.100000
+[05.14.22|21:32:05] 	train_mean_loss: 5.384638684136527
+[05.14.22|21:32:05] Training epoch: 53
+[05.14.22|21:32:09] 	Iter 15300 Done. | loss: 5.3431 | lr: 0.100000
+[05.14.22|21:32:34] 	Iter 15400 Done. | loss: 5.4233 | lr: 0.100000
+[05.14.22|21:32:58] 	Iter 15500 Done. | loss: 5.2526 | lr: 0.100000
+[05.14.22|21:33:18] 	train_mean_loss: 5.285786546006495
+[05.14.22|21:33:18] Training epoch: 54
+[05.14.22|21:33:23] 	Iter 15600 Done. | loss: 5.3258 | lr: 0.100000
+[05.14.22|21:33:48] 	Iter 15700 Done. | loss: 5.2730 | lr: 0.100000
+[05.14.22|21:34:13] 	Iter 15800 Done. | loss: 5.2516 | lr: 0.100000
+[05.14.22|21:34:31] 	train_mean_loss: 5.257107960123594
+[05.14.22|21:34:31] Training epoch: 55
+[05.14.22|21:34:38] 	Iter 15900 Done. | loss: 5.1462 | lr: 0.100000
+[05.14.22|21:35:02] 	Iter 16000 Done. | loss: 5.2176 | lr: 0.100000
+[05.14.22|21:35:27] 	Iter 16100 Done. | loss: 5.0984 | lr: 0.100000
+[05.14.22|21:35:44] 	train_mean_loss: 5.142261091543704
+[05.14.22|21:35:44] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch55_model.pt.
+[05.14.22|21:35:44] Training epoch: 56
+[05.14.22|21:35:52] 	Iter 16200 Done. | loss: 5.1285 | lr: 0.100000
+[05.14.22|21:36:16] 	Iter 16300 Done. | loss: 4.9884 | lr: 0.100000
+[05.14.22|21:36:41] 	Iter 16400 Done. | loss: 5.1115 | lr: 0.100000
+[05.14.22|21:36:57] 	train_mean_loss: 5.024017233426879
+[05.14.22|21:36:57] Training epoch: 57
+[05.14.22|21:37:06] 	Iter 16500 Done. | loss: 5.0176 | lr: 0.100000
+[05.14.22|21:37:31] 	Iter 16600 Done. | loss: 5.1806 | lr: 0.100000
+[05.14.22|21:37:56] 	Iter 16700 Done. | loss: 4.9774 | lr: 0.100000
+[05.14.22|21:38:10] 	train_mean_loss: 4.961375979339184
+[05.14.22|21:38:10] Training epoch: 58
+[05.14.22|21:38:21] 	Iter 16800 Done. | loss: 4.8873 | lr: 0.100000
+[05.14.22|21:38:45] 	Iter 16900 Done. | loss: 4.8329 | lr: 0.100000
+[05.14.22|21:39:10] 	Iter 17000 Done. | loss: 5.1445 | lr: 0.100000
+[05.14.22|21:39:22] 	train_mean_loss: 4.9245889284172835
+[05.14.22|21:39:22] Training epoch: 59
+[05.14.22|21:39:35] 	Iter 17100 Done. | loss: 4.6365 | lr: 0.100000
+[05.14.22|21:40:00] 	Iter 17200 Done. | loss: 5.0234 | lr: 0.100000
+[05.14.22|21:40:25] 	Iter 17300 Done. | loss: 4.7943 | lr: 0.100000
+[05.14.22|21:40:36] 	train_mean_loss: 4.8371095430283315
+[05.14.22|21:40:36] Training epoch: 60
+[05.14.22|21:40:50] 	Iter 17400 Done. | loss: 4.6080 | lr: 0.100000
+[05.14.22|21:41:15] 	Iter 17500 Done. | loss: 4.7929 | lr: 0.100000
+[05.14.22|21:41:40] 	Iter 17600 Done. | loss: 4.6324 | lr: 0.100000
+[05.14.22|21:41:49] 	train_mean_loss: 4.695497058686756
+[05.14.22|21:41:49] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch60_model.pt.
+[05.14.22|21:41:49] Training epoch: 61
+[05.14.22|21:42:05] 	Iter 17700 Done. | loss: 4.8318 | lr: 0.100000
+[05.14.22|21:42:29] 	Iter 17800 Done. | loss: 4.6226 | lr: 0.100000
+[05.14.22|21:42:54] 	Iter 17900 Done. | loss: 4.6260 | lr: 0.100000
+[05.14.22|21:43:02] 	train_mean_loss: 4.599251372473581
+[05.14.22|21:43:02] Training epoch: 62
+[05.14.22|21:43:19] 	Iter 18000 Done. | loss: 4.4115 | lr: 0.100000
+[05.14.22|21:43:44] 	Iter 18100 Done. | loss: 4.6737 | lr: 0.100000
+[05.14.22|21:44:08] 	Iter 18200 Done. | loss: 4.4653 | lr: 0.100000
+[05.14.22|21:44:15] 	train_mean_loss: 4.534032137215543
+[05.14.22|21:44:15] Training epoch: 63
+[05.14.22|21:44:34] 	Iter 18300 Done. | loss: 4.8326 | lr: 0.100000
+[05.14.22|21:44:58] 	Iter 18400 Done. | loss: 4.4072 | lr: 0.100000
+[05.14.22|21:45:23] 	Iter 18500 Done. | loss: 4.4807 | lr: 0.100000
+[05.14.22|21:45:28] 	train_mean_loss: 4.4266011852796385
+[05.14.22|21:45:28] Training epoch: 64
+[05.14.22|21:45:48] 	Iter 18600 Done. | loss: 4.5155 | lr: 0.100000
+[05.14.22|21:46:13] 	Iter 18700 Done. | loss: 4.4569 | lr: 0.100000
+[05.14.22|21:46:38] 	Iter 18800 Done. | loss: 4.3556 | lr: 0.100000
+[05.14.22|21:46:42] 	train_mean_loss: 4.331273122709625
+[05.14.22|21:46:42] Training epoch: 65
+[05.14.22|21:47:03] 	Iter 18900 Done. | loss: 4.4952 | lr: 0.100000
+[05.14.22|21:47:28] 	Iter 19000 Done. | loss: 4.2186 | lr: 0.100000
+[05.14.22|21:47:53] 	Iter 19100 Done. | loss: 4.2761 | lr: 0.100000
+[05.14.22|21:47:55] 	train_mean_loss: 4.394243370108053
+[05.14.22|21:47:55] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch65_model.pt.
+[05.14.22|21:47:55] Training epoch: 66
+[05.14.22|21:48:18] 	Iter 19200 Done. | loss: 4.1188 | lr: 0.100000
+[05.14.22|21:48:43] 	Iter 19300 Done. | loss: 4.0912 | lr: 0.100000
+[05.14.22|21:49:07] 	Iter 19400 Done. | loss: 4.2074 | lr: 0.100000
+[05.14.22|21:49:08] 	train_mean_loss: 4.240906022032913
+[05.14.22|21:49:08] Training epoch: 67
+[05.14.22|21:49:32] 	Iter 19500 Done. | loss: 4.1462 | lr: 0.100000
+[05.14.22|21:49:57] 	Iter 19600 Done. | loss: 4.2085 | lr: 0.100000
+[05.14.22|21:50:21] 	train_mean_loss: 4.1305717578550585
+[05.14.22|21:50:21] Training epoch: 68
+[05.14.22|21:50:22] 	Iter 19700 Done. | loss: 4.1758 | lr: 0.100000
+[05.14.22|21:50:47] 	Iter 19800 Done. | loss: 4.0790 | lr: 0.100000
+[05.14.22|21:51:11] 	Iter 19900 Done. | loss: 3.9946 | lr: 0.100000
+[05.14.22|21:51:34] 	train_mean_loss: 4.070415268138963
+[05.14.22|21:51:34] Training epoch: 69
+[05.14.22|21:51:37] 	Iter 20000 Done. | loss: 3.9686 | lr: 0.100000
+[05.14.22|21:52:02] 	Iter 20100 Done. | loss: 3.7383 | lr: 0.100000
+[05.14.22|21:52:26] 	Iter 20200 Done. | loss: 3.9385 | lr: 0.100000
+[05.14.22|21:52:47] 	train_mean_loss: 3.9269695403624554
+[05.14.22|21:52:47] Training epoch: 70
+[05.14.22|21:52:51] 	Iter 20300 Done. | loss: 3.8817 | lr: 0.100000
+[05.14.22|21:53:16] 	Iter 20400 Done. | loss: 4.0640 | lr: 0.100000
+[05.14.22|21:53:40] 	Iter 20500 Done. | loss: 4.1897 | lr: 0.100000
+[05.14.22|21:54:00] 	train_mean_loss: 3.86368321561489
+[05.14.22|21:54:00] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch70_model.pt.
+[05.14.22|21:54:00] Training epoch: 71
+[05.14.22|21:54:05] 	Iter 20600 Done. | loss: 3.7360 | lr: 0.100000
+[05.14.22|21:54:30] 	Iter 20700 Done. | loss: 4.2111 | lr: 0.100000
+[05.14.22|21:54:54] 	Iter 20800 Done. | loss: 3.9048 | lr: 0.100000
+[05.14.22|21:55:12] 	train_mean_loss: 3.865930448584005
+[05.14.22|21:55:12] Training epoch: 72
+[05.14.22|21:55:19] 	Iter 20900 Done. | loss: 3.7522 | lr: 0.100000
+[05.14.22|21:55:44] 	Iter 21000 Done. | loss: 3.7103 | lr: 0.100000
+[05.14.22|21:56:09] 	Iter 21100 Done. | loss: 3.7195 | lr: 0.100000
+[05.14.22|21:56:25] 	train_mean_loss: 3.6901430037556864
+[05.14.22|21:56:25] Training epoch: 73
+[05.14.22|21:56:34] 	Iter 21200 Done. | loss: 3.6887 | lr: 0.100000
+[05.14.22|21:56:58] 	Iter 21300 Done. | loss: 3.5366 | lr: 0.100000
+[05.14.22|21:57:23] 	Iter 21400 Done. | loss: 3.4758 | lr: 0.100000
+[05.14.22|21:57:38] 	train_mean_loss: 3.597667728151594
+[05.14.22|21:57:38] Training epoch: 74
+[05.14.22|21:57:48] 	Iter 21500 Done. | loss: 3.4777 | lr: 0.100000
+[05.14.22|21:58:12] 	Iter 21600 Done. | loss: 3.5004 | lr: 0.100000
+[05.14.22|21:58:37] 	Iter 21700 Done. | loss: 3.5726 | lr: 0.100000
+[05.14.22|21:58:50] 	train_mean_loss: 3.576601986171437
+[05.14.22|21:58:50] Training epoch: 75
+[05.14.22|21:59:02] 	Iter 21800 Done. | loss: 3.5405 | lr: 0.100000
+[05.14.22|21:59:26] 	Iter 21900 Done. | loss: 3.3912 | lr: 0.100000
+[05.14.22|21:59:51] 	Iter 22000 Done. | loss: 3.5314 | lr: 0.100000
+[05.14.22|22:00:03] 	train_mean_loss: 3.478536695850139
+[05.14.22|22:00:03] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch75_model.pt.
+[05.14.22|22:00:03] Training epoch: 76
+[05.14.22|22:00:16] 	Iter 22100 Done. | loss: 3.5515 | lr: 0.100000
+[05.14.22|22:00:40] 	Iter 22200 Done. | loss: 3.4449 | lr: 0.100000
+[05.14.22|22:01:05] 	Iter 22300 Done. | loss: 3.6503 | lr: 0.100000
+[05.14.22|22:01:16] 	train_mean_loss: 3.4101704918608373
+[05.14.22|22:01:16] Training epoch: 77
+[05.14.22|22:01:30] 	Iter 22400 Done. | loss: 3.2583 | lr: 0.100000
+[05.14.22|22:01:54] 	Iter 22500 Done. | loss: 3.3415 | lr: 0.100000
+[05.14.22|22:02:19] 	Iter 22600 Done. | loss: 3.3087 | lr: 0.100000
+[05.14.22|22:02:28] 	train_mean_loss: 3.243454651767705
+[05.14.22|22:02:28] Training epoch: 78
+[05.14.22|22:02:44] 	Iter 22700 Done. | loss: 3.2983 | lr: 0.100000
+[05.14.22|22:03:08] 	Iter 22800 Done. | loss: 3.1194 | lr: 0.100000
+[05.14.22|22:03:33] 	Iter 22900 Done. | loss: 3.2055 | lr: 0.100000
+[05.14.22|22:03:41] 	train_mean_loss: 3.185237642859115
+[05.14.22|22:03:41] Training epoch: 79
+[05.14.22|22:03:58] 	Iter 23000 Done. | loss: 3.1072 | lr: 0.100000
+[05.14.22|22:04:22] 	Iter 23100 Done. | loss: 2.7433 | lr: 0.100000
+[05.14.22|22:04:47] 	Iter 23200 Done. | loss: 3.1149 | lr: 0.100000
+[05.14.22|22:04:53] 	train_mean_loss: 3.076362975600625
+[05.14.22|22:04:53] Training epoch: 80
+[05.14.22|22:05:12] 	Iter 23300 Done. | loss: 2.9176 | lr: 0.100000
+[05.14.22|22:05:36] 	Iter 23400 Done. | loss: 3.1609 | lr: 0.100000
+[05.14.22|22:06:01] 	Iter 23500 Done. | loss: 2.8431 | lr: 0.100000
+[05.14.22|22:06:06] 	train_mean_loss: 3.044079495936024
+[05.14.22|22:06:06] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch80_model.pt.
+[05.14.22|22:06:06] Training epoch: 81
+[05.14.22|22:06:26] 	Iter 23600 Done. | loss: 2.9055 | lr: 0.100000
+[05.14.22|22:06:51] 	Iter 23700 Done. | loss: 2.8992 | lr: 0.100000
+[05.14.22|22:07:15] 	Iter 23800 Done. | loss: 3.0733 | lr: 0.100000
+[05.14.22|22:07:19] 	train_mean_loss: 3.0043697178769273
+[05.14.22|22:07:19] Training epoch: 82
+[05.14.22|22:07:40] 	Iter 23900 Done. | loss: 2.9835 | lr: 0.100000
+[05.14.22|22:08:05] 	Iter 24000 Done. | loss: 2.8525 | lr: 0.100000
+[05.14.22|22:08:29] 	Iter 24100 Done. | loss: 2.9409 | lr: 0.100000
+[05.14.22|22:08:31] 	train_mean_loss: 2.9572524351327596
+[05.14.22|22:08:31] Training epoch: 83
+[05.14.22|22:08:54] 	Iter 24200 Done. | loss: 2.8540 | lr: 0.100000
+[05.14.22|22:09:19] 	Iter 24300 Done. | loss: 2.6395 | lr: 0.100000
+[05.14.22|22:09:44] 	Iter 24400 Done. | loss: 2.7222 | lr: 0.100000
+[05.14.22|22:09:44] 	train_mean_loss: 2.817564000888747
+[05.14.22|22:09:44] Training epoch: 84
+[05.14.22|22:10:09] 	Iter 24500 Done. | loss: 2.7210 | lr: 0.100000
+[05.14.22|22:10:33] 	Iter 24600 Done. | loss: 3.0886 | lr: 0.100000
+[05.14.22|22:10:56] 	train_mean_loss: 2.709885128501321
+[05.14.22|22:10:56] Training epoch: 85
+[05.14.22|22:10:58] 	Iter 24700 Done. | loss: 2.6679 | lr: 0.100000
+[05.14.22|22:11:23] 	Iter 24800 Done. | loss: 2.7157 | lr: 0.100000
+[05.14.22|22:11:47] 	Iter 24900 Done. | loss: 2.5157 | lr: 0.100000
+[05.14.22|22:12:09] 	train_mean_loss: 2.6276539880402234
+[05.14.22|22:12:09] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch85_model.pt.
+[05.14.22|22:12:09] Training epoch: 86
+[05.14.22|22:12:12] 	Iter 25000 Done. | loss: 2.4584 | lr: 0.100000
+[05.14.22|22:12:37] 	Iter 25100 Done. | loss: 2.4755 | lr: 0.100000
+[05.14.22|22:13:01] 	Iter 25200 Done. | loss: 2.2410 | lr: 0.100000
+[05.14.22|22:13:22] 	train_mean_loss: 2.595601643834795
+[05.14.22|22:13:22] Training epoch: 87
+[05.14.22|22:13:26] 	Iter 25300 Done. | loss: 2.6225 | lr: 0.100000
+[05.14.22|22:13:51] 	Iter 25400 Done. | loss: 2.5173 | lr: 0.100000
+[05.14.22|22:14:16] 	Iter 25500 Done. | loss: 2.9566 | lr: 0.100000
+[05.14.22|22:14:35] 	train_mean_loss: 2.576625635023831
+[05.14.22|22:14:35] Training epoch: 88
+[05.14.22|22:14:41] 	Iter 25600 Done. | loss: 2.4463 | lr: 0.100000
+[05.14.22|22:15:06] 	Iter 25700 Done. | loss: 2.3230 | lr: 0.100000
+[05.14.22|22:15:30] 	Iter 25800 Done. | loss: 2.2139 | lr: 0.100000
+[05.14.22|22:15:48] 	train_mean_loss: 2.6154093081448355
+[05.14.22|22:15:48] Training epoch: 89
+[05.14.22|22:15:55] 	Iter 25900 Done. | loss: 3.0101 | lr: 0.100000
+[05.14.22|22:16:20] 	Iter 26000 Done. | loss: 2.8795 | lr: 0.100000
+[05.14.22|22:16:44] 	Iter 26100 Done. | loss: 2.7852 | lr: 0.100000
+[05.14.22|22:17:00] 	train_mean_loss: 2.8324735894495126
+[05.14.22|22:17:00] Training epoch: 90
+[05.14.22|22:17:09] 	Iter 26200 Done. | loss: 2.6882 | lr: 0.100000
+[05.14.22|22:17:34] 	Iter 26300 Done. | loss: 2.6713 | lr: 0.100000
+[05.14.22|22:17:58] 	Iter 26400 Done. | loss: 2.4955 | lr: 0.100000
+[05.14.22|22:18:13] 	train_mean_loss: 2.590455692641589
+[05.14.22|22:18:13] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch90_model.pt.
+[05.14.22|22:18:13] Training epoch: 91
+[05.14.22|22:18:24] 	Iter 26500 Done. | loss: 2.7694 | lr: 0.100000
+[05.14.22|22:18:48] 	Iter 26600 Done. | loss: 2.6048 | lr: 0.100000
+[05.14.22|22:19:13] 	Iter 26700 Done. | loss: 2.4734 | lr: 0.100000
+[05.14.22|22:19:26] 	train_mean_loss: 2.531024310864559
+[05.14.22|22:19:26] Training epoch: 92
+[05.14.22|22:19:38] 	Iter 26800 Done. | loss: 2.4929 | lr: 0.100000
+[05.14.22|22:20:02] 	Iter 26900 Done. | loss: 2.3683 | lr: 0.100000
+[05.14.22|22:20:27] 	Iter 27000 Done. | loss: 2.4381 | lr: 0.100000
+[05.14.22|22:20:38] 	train_mean_loss: 2.4183471365039853
+[05.14.22|22:20:38] Training epoch: 93
+[05.14.22|22:20:52] 	Iter 27100 Done. | loss: 2.5070 | lr: 0.100000
+[05.14.22|22:21:17] 	Iter 27200 Done. | loss: 2.3275 | lr: 0.100000
+[05.14.22|22:21:41] 	Iter 27300 Done. | loss: 2.1555 | lr: 0.100000
+[05.14.22|22:21:51] 	train_mean_loss: 2.3090190218419444
+[05.14.22|22:21:51] Training epoch: 94
+[05.14.22|22:22:06] 	Iter 27400 Done. | loss: 2.3343 | lr: 0.100000
+[05.14.22|22:22:31] 	Iter 27500 Done. | loss: 2.3519 | lr: 0.100000
+[05.14.22|22:22:55] 	Iter 27600 Done. | loss: 2.3283 | lr: 0.100000
+[05.14.22|22:23:04] 	train_mean_loss: 2.206868271438443
+[05.14.22|22:23:04] Training epoch: 95
+[05.14.22|22:23:20] 	Iter 27700 Done. | loss: 2.2879 | lr: 0.100000
+[05.14.22|22:23:45] 	Iter 27800 Done. | loss: 1.8536 | lr: 0.100000
+[05.14.22|22:24:09] 	Iter 27900 Done. | loss: 2.2222 | lr: 0.100000
+[05.14.22|22:24:17] 	train_mean_loss: 2.145368898806929
+[05.14.22|22:24:17] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch95_model.pt.
+[05.14.22|22:24:17] Training epoch: 96
+[05.14.22|22:24:34] 	Iter 28000 Done. | loss: 1.8838 | lr: 0.100000
+[05.14.22|22:24:59] 	Iter 28100 Done. | loss: 2.2957 | lr: 0.100000
+[05.14.22|22:25:24] 	Iter 28200 Done. | loss: 2.0088 | lr: 0.100000
+[05.14.22|22:25:29] 	train_mean_loss: 2.1269609218551997
+[05.14.22|22:25:29] Training epoch: 97
+[05.14.22|22:25:49] 	Iter 28300 Done. | loss: 2.3244 | lr: 0.100000
+[05.14.22|22:26:13] 	Iter 28400 Done. | loss: 2.1680 | lr: 0.100000
+[05.14.22|22:26:38] 	Iter 28500 Done. | loss: 1.5945 | lr: 0.100000
+[05.14.22|22:26:42] 	train_mean_loss: 2.126056579910979
+[05.14.22|22:26:42] Training epoch: 98
+[05.14.22|22:27:03] 	Iter 28600 Done. | loss: 1.9392 | lr: 0.100000
+[05.14.22|22:27:27] 	Iter 28700 Done. | loss: 1.8517 | lr: 0.100000
+[05.14.22|22:27:52] 	Iter 28800 Done. | loss: 1.8160 | lr: 0.100000
+[05.14.22|22:27:55] 	train_mean_loss: 2.0502128349680477
+[05.14.22|22:27:55] Training epoch: 99
+[05.14.22|22:28:17] 	Iter 28900 Done. | loss: 1.9677 | lr: 0.100000
+[05.14.22|22:28:42] 	Iter 29000 Done. | loss: 1.9419 | lr: 0.100000
+[05.14.22|22:29:06] 	Iter 29100 Done. | loss: 1.8533 | lr: 0.100000
+[05.14.22|22:29:08] 	train_mean_loss: 1.9311485963613808
+[05.14.22|22:29:08] Training epoch: 100
+[05.14.22|22:29:31] 	Iter 29200 Done. | loss: 1.8574 | lr: 0.100000
+[05.14.22|22:29:56] 	Iter 29300 Done. | loss: 1.8725 | lr: 0.100000
+[05.14.22|22:30:20] 	train_mean_loss: 1.8736774475396085
+[05.14.22|22:30:20] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch100_model.pt.
+[05.14.22|22:30:20] Training epoch: 101
+[05.14.22|22:30:21] 	Iter 29400 Done. | loss: 2.1331 | lr: 0.100000
+[05.14.22|22:30:45] 	Iter 29500 Done. | loss: 1.8960 | lr: 0.100000
+[05.14.22|22:31:10] 	Iter 29600 Done. | loss: 1.5195 | lr: 0.100000
+[05.14.22|22:31:32] 	train_mean_loss: 1.8442864673478263
+[05.14.22|22:31:32] Training epoch: 102
+[05.14.22|22:31:34] 	Iter 29700 Done. | loss: 2.0183 | lr: 0.100000
+[05.14.22|22:31:59] 	Iter 29800 Done. | loss: 3.1556 | lr: 0.100000
+[05.14.22|22:32:24] 	Iter 29900 Done. | loss: 1.7355 | lr: 0.100000
+[05.14.22|22:32:45] 	train_mean_loss: 1.88383008387624
+[05.14.22|22:32:45] Training epoch: 103
+[05.14.22|22:32:49] 	Iter 30000 Done. | loss: 1.7763 | lr: 0.100000
+[05.14.22|22:33:14] 	Iter 30100 Done. | loss: 1.7881 | lr: 0.100000
+[05.14.22|22:33:39] 	Iter 30200 Done. | loss: 1.9698 | lr: 0.100000
+[05.14.22|22:33:58] 	train_mean_loss: 1.7853701337665118
+[05.14.22|22:33:58] Training epoch: 104
+[05.14.22|22:34:04] 	Iter 30300 Done. | loss: 1.8319 | lr: 0.100000
+[05.14.22|22:34:28] 	Iter 30400 Done. | loss: 1.6867 | lr: 0.100000
+[05.14.22|22:34:53] 	Iter 30500 Done. | loss: 1.6763 | lr: 0.100000
+[05.14.22|22:35:11] 	train_mean_loss: 1.711021789077188
+[05.14.22|22:35:11] Training epoch: 105
+[05.14.22|22:35:18] 	Iter 30600 Done. | loss: 1.8397 | lr: 0.100000
+[05.14.22|22:35:43] 	Iter 30700 Done. | loss: 1.8035 | lr: 0.100000
+[05.14.22|22:36:07] 	Iter 30800 Done. | loss: 1.6214 | lr: 0.100000
+[05.14.22|22:36:24] 	train_mean_loss: 1.6953295728787272
+[05.14.22|22:36:24] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch105_model.pt.
+[05.14.22|22:36:24] Training epoch: 106
+[05.14.22|22:36:32] 	Iter 30900 Done. | loss: 1.7515 | lr: 0.100000
+[05.14.22|22:36:56] 	Iter 31000 Done. | loss: 1.5813 | lr: 0.100000
+[05.14.22|22:37:21] 	Iter 31100 Done. | loss: 1.5953 | lr: 0.100000
+[05.14.22|22:37:36] 	train_mean_loss: 1.6512847936072317
+[05.14.22|22:37:36] Training epoch: 107
+[05.14.22|22:37:46] 	Iter 31200 Done. | loss: 1.7039 | lr: 0.100000
+[05.14.22|22:38:10] 	Iter 31300 Done. | loss: 1.8169 | lr: 0.100000
+[05.14.22|22:38:35] 	Iter 31400 Done. | loss: 1.8320 | lr: 0.100000
+[05.14.22|22:38:49] 	train_mean_loss: 1.7543997444263122
+[05.14.22|22:38:49] Training epoch: 108
+[05.14.22|22:39:00] 	Iter 31500 Done. | loss: 1.7776 | lr: 0.100000
+[05.14.22|22:39:24] 	Iter 31600 Done. | loss: 1.5094 | lr: 0.100000
+[05.14.22|22:39:49] 	Iter 31700 Done. | loss: 1.6072 | lr: 0.100000
+[05.14.22|22:40:02] 	train_mean_loss: 1.6085856719081904
+[05.14.22|22:40:02] Training epoch: 109
+[05.14.22|22:40:14] 	Iter 31800 Done. | loss: 1.6060 | lr: 0.100000
+[05.14.22|22:40:39] 	Iter 31900 Done. | loss: 1.5688 | lr: 0.100000
+[05.14.22|22:41:03] 	Iter 32000 Done. | loss: 1.5955 | lr: 0.100000
+[05.14.22|22:41:14] 	train_mean_loss: 1.5637722635755733
+[05.14.22|22:41:14] Training epoch: 110
+[05.14.22|22:41:28] 	Iter 32100 Done. | loss: 1.5176 | lr: 0.100000
+[05.14.22|22:41:52] 	Iter 32200 Done. | loss: 1.7717 | lr: 0.100000
+[05.14.22|22:42:17] 	Iter 32300 Done. | loss: 1.4210 | lr: 0.100000
+[05.14.22|22:42:27] 	train_mean_loss: 1.6825596341470472
+[05.14.22|22:42:27] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch110_model.pt.
+[05.14.22|22:42:27] Training epoch: 111
+[05.14.22|22:42:42] 	Iter 32400 Done. | loss: 1.4518 | lr: 0.100000
+[05.14.22|22:43:07] 	Iter 32500 Done. | loss: 1.3246 | lr: 0.100000
+[05.14.22|22:43:31] 	Iter 32600 Done. | loss: 1.4423 | lr: 0.100000
+[05.14.22|22:43:39] 	train_mean_loss: 1.5080002530091474
+[05.14.22|22:43:39] Training epoch: 112
+[05.14.22|22:43:56] 	Iter 32700 Done. | loss: 1.6269 | lr: 0.100000
+[05.14.22|22:44:21] 	Iter 32800 Done. | loss: 1.4562 | lr: 0.100000
+[05.14.22|22:44:45] 	Iter 32900 Done. | loss: 1.3489 | lr: 0.100000
+[05.14.22|22:44:52] 	train_mean_loss: 1.4865791432711544
+[05.14.22|22:44:52] Training epoch: 113
+[05.14.22|22:45:10] 	Iter 33000 Done. | loss: 1.6279 | lr: 0.100000
+[05.14.22|22:45:35] 	Iter 33100 Done. | loss: 1.4316 | lr: 0.100000
+[05.14.22|22:46:00] 	Iter 33200 Done. | loss: 1.4460 | lr: 0.100000
+[05.14.22|22:46:05] 	train_mean_loss: 1.4669770711944217
+[05.14.22|22:46:05] Training epoch: 114
+[05.14.22|22:46:25] 	Iter 33300 Done. | loss: 1.5918 | lr: 0.100000
+[05.14.22|22:46:49] 	Iter 33400 Done. | loss: 1.4756 | lr: 0.100000
+[05.14.22|22:47:14] 	Iter 33500 Done. | loss: 1.2435 | lr: 0.100000
+[05.14.22|22:47:18] 	train_mean_loss: 1.4336918304566624
+[05.14.22|22:47:18] Training epoch: 115
+[05.14.22|22:47:40] 	Iter 33600 Done. | loss: 1.4221 | lr: 0.100000
+[05.14.22|22:48:04] 	Iter 33700 Done. | loss: 1.4707 | lr: 0.100000
+[05.14.22|22:48:29] 	Iter 33800 Done. | loss: 1.3453 | lr: 0.100000
+[05.14.22|22:48:31] 	train_mean_loss: 1.4112996759057856
+[05.14.22|22:48:31] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch115_model.pt.
+[05.14.22|22:48:31] Training epoch: 116
+[05.14.22|22:48:54] 	Iter 33900 Done. | loss: 1.4618 | lr: 0.100000
+[05.14.22|22:49:19] 	Iter 34000 Done. | loss: 1.4577 | lr: 0.100000
+[05.14.22|22:49:44] 	Iter 34100 Done. | loss: 1.3636 | lr: 0.100000
+[05.14.22|22:49:44] 	train_mean_loss: 1.3720801046916418
+[05.14.22|22:49:44] Training epoch: 117
+[05.14.22|22:50:08] 	Iter 34200 Done. | loss: 1.3568 | lr: 0.100000
+[05.14.22|22:50:33] 	Iter 34300 Done. | loss: 1.2347 | lr: 0.100000
+[05.14.22|22:50:57] 	train_mean_loss: 1.351148387607263
+[05.14.22|22:50:57] Training epoch: 118
+[05.14.22|22:50:58] 	Iter 34400 Done. | loss: 1.4536 | lr: 0.100000
+[05.14.22|22:51:23] 	Iter 34500 Done. | loss: 1.2613 | lr: 0.100000
+[05.14.22|22:51:47] 	Iter 34600 Done. | loss: 1.2741 | lr: 0.100000
+[05.14.22|22:52:10] 	train_mean_loss: 1.3249397590046836
+[05.14.22|22:52:10] Training epoch: 119
+[05.14.22|22:52:12] 	Iter 34700 Done. | loss: 1.4003 | lr: 0.100000
+[05.14.22|22:52:37] 	Iter 34800 Done. | loss: 1.8883 | lr: 0.100000
+[05.14.22|22:53:01] 	Iter 34900 Done. | loss: 1.2638 | lr: 0.100000
+[05.14.22|22:53:22] 	train_mean_loss: 1.3312702412102497
+[05.14.22|22:53:22] Training epoch: 120
+[05.14.22|22:53:26] 	Iter 35000 Done. | loss: 1.4160 | lr: 0.100000
+[05.14.22|22:53:51] 	Iter 35100 Done. | loss: 2.8229 | lr: 0.100000
+[05.14.22|22:54:16] 	Iter 35200 Done. | loss: 1.1922 | lr: 0.100000
+[05.14.22|22:54:35] 	train_mean_loss: 1.4592459445097008
+[05.14.22|22:54:35] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch120_model.pt.
+[05.14.22|22:54:35] Training epoch: 121
+[05.14.22|22:54:41] 	Iter 35300 Done. | loss: 1.3772 | lr: 0.100000
+[05.14.22|22:55:05] 	Iter 35400 Done. | loss: 1.2222 | lr: 0.100000
+[05.14.22|22:55:30] 	Iter 35500 Done. | loss: 1.0858 | lr: 0.100000
+[05.14.22|22:55:48] 	train_mean_loss: 1.2650076331329994
+[05.14.22|22:55:48] Training epoch: 122
+[05.14.22|22:55:55] 	Iter 35600 Done. | loss: 1.3303 | lr: 0.100000
+[05.14.22|22:56:20] 	Iter 35700 Done. | loss: 1.2526 | lr: 0.100000
+[05.14.22|22:56:44] 	Iter 35800 Done. | loss: 1.2028 | lr: 0.100000
+[05.14.22|22:57:01] 	train_mean_loss: 1.246784596216111
+[05.14.22|22:57:01] Training epoch: 123
+[05.14.22|22:57:09] 	Iter 35900 Done. | loss: 1.4392 | lr: 0.100000
+[05.14.22|22:57:34] 	Iter 36000 Done. | loss: 1.2985 | lr: 0.100000
+[05.14.22|22:57:59] 	Iter 36100 Done. | loss: 1.2377 | lr: 0.100000
+[05.14.22|22:58:14] 	train_mean_loss: 1.257934527129543
+[05.14.22|22:58:14] Training epoch: 124
+[05.14.22|22:58:24] 	Iter 36200 Done. | loss: 1.3293 | lr: 0.100000
+[05.14.22|22:58:48] 	Iter 36300 Done. | loss: 1.2523 | lr: 0.100000
+[05.14.22|22:59:13] 	Iter 36400 Done. | loss: 1.0980 | lr: 0.100000
+[05.14.22|22:59:27] 	train_mean_loss: 1.1969342647361108
+[05.14.22|22:59:27] Training epoch: 125
+[05.14.22|22:59:38] 	Iter 36500 Done. | loss: 1.2815 | lr: 0.100000
+[05.14.22|23:00:03] 	Iter 36600 Done. | loss: 1.2081 | lr: 0.100000
+[05.14.22|23:00:27] 	Iter 36700 Done. | loss: 1.1267 | lr: 0.100000
+[05.14.22|23:00:39] 	train_mean_loss: 1.176040953519393
+[05.14.22|23:00:39] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch125_model.pt.
+[05.14.22|23:00:39] Training epoch: 126
+[05.14.22|23:00:52] 	Iter 36800 Done. | loss: 1.3608 | lr: 0.100000
+[05.14.22|23:01:17] 	Iter 36900 Done. | loss: 0.9303 | lr: 0.100000
+[05.14.22|23:01:42] 	Iter 37000 Done. | loss: 1.0073 | lr: 0.100000
+[05.14.22|23:01:52] 	train_mean_loss: 1.164184511113329
+[05.14.22|23:01:52] Training epoch: 127
+[05.14.22|23:02:07] 	Iter 37100 Done. | loss: 1.2499 | lr: 0.100000
+[05.14.22|23:02:31] 	Iter 37200 Done. | loss: 1.0366 | lr: 0.100000
+[05.14.22|23:02:55] 	Iter 37300 Done. | loss: 1.1070 | lr: 0.100000
+[05.14.22|23:03:04] 	train_mean_loss: 1.1487673354797623
+[05.14.22|23:03:04] Training epoch: 128
+[05.14.22|23:03:20] 	Iter 37400 Done. | loss: 1.1640 | lr: 0.100000
+[05.14.22|23:03:45] 	Iter 37500 Done. | loss: 1.2110 | lr: 0.100000
+[05.14.22|23:04:10] 	Iter 37600 Done. | loss: 0.9508 | lr: 0.100000
+[05.14.22|23:04:17] 	train_mean_loss: 1.16149844969211
+[05.14.22|23:04:17] Training epoch: 129
+[05.14.22|23:04:34] 	Iter 37700 Done. | loss: 1.1467 | lr: 0.100000
+[05.14.22|23:04:59] 	Iter 37800 Done. | loss: 1.1651 | lr: 0.100000
+[05.14.22|23:05:24] 	Iter 37900 Done. | loss: 1.1642 | lr: 0.100000
+[05.14.22|23:05:30] 	train_mean_loss: 1.15588028009246
+[05.14.22|23:05:30] Training epoch: 130
+[05.14.22|23:05:49] 	Iter 38000 Done. | loss: 1.0505 | lr: 0.100000
+[05.14.22|23:06:13] 	Iter 38100 Done. | loss: 1.0494 | lr: 0.100000
+[05.14.22|23:06:37] 	Iter 38200 Done. | loss: 0.9846 | lr: 0.100000
+[05.14.22|23:06:42] 	train_mean_loss: 1.08147784499895
+[05.14.22|23:06:42] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch130_model.pt.
+[05.14.22|23:06:42] Training epoch: 131
+[05.14.22|23:07:02] 	Iter 38300 Done. | loss: 0.9739 | lr: 0.100000
+[05.14.22|23:07:27] 	Iter 38400 Done. | loss: 1.0433 | lr: 0.100000
+[05.14.22|23:07:52] 	Iter 38500 Done. | loss: 0.9308 | lr: 0.100000
+[05.14.22|23:07:55] 	train_mean_loss: 1.075399127541756
+[05.14.22|23:07:55] Training epoch: 132
+[05.14.22|23:08:17] 	Iter 38600 Done. | loss: 1.0462 | lr: 0.100000
+[05.14.22|23:08:41] 	Iter 38700 Done. | loss: 1.0540 | lr: 0.100000
+[05.14.22|23:09:06] 	Iter 38800 Done. | loss: 1.0413 | lr: 0.100000
+[05.14.22|23:09:07] 	train_mean_loss: 1.0669812215428773
+[05.14.22|23:09:07] Training epoch: 133
+[05.14.22|23:09:31] 	Iter 38900 Done. | loss: 1.5052 | lr: 0.100000
+[05.14.22|23:09:55] 	Iter 39000 Done. | loss: 1.2749 | lr: 0.100000
+[05.14.22|23:10:20] 	Iter 39100 Done. | loss: 1.4598 | lr: 0.100000
+[05.14.22|23:10:20] 	train_mean_loss: 1.6131324119308368
+[05.14.22|23:10:20] Training epoch: 134
+[05.14.22|23:10:45] 	Iter 39200 Done. | loss: 1.2548 | lr: 0.100000
+[05.14.22|23:11:09] 	Iter 39300 Done. | loss: 1.2483 | lr: 0.100000
+[05.14.22|23:11:33] 	train_mean_loss: 1.2299798921662934
+[05.14.22|23:11:33] Training epoch: 135
+[05.14.22|23:11:34] 	Iter 39400 Done. | loss: 1.2731 | lr: 0.100000
+[05.14.22|23:11:59] 	Iter 39500 Done. | loss: 1.2326 | lr: 0.100000
+[05.14.22|23:12:23] 	Iter 39600 Done. | loss: 1.1457 | lr: 0.100000
+[05.14.22|23:12:45] 	train_mean_loss: 1.1528255866498363
+[05.14.22|23:12:45] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch135_model.pt.
+[05.14.22|23:12:45] Training epoch: 136
+[05.14.22|23:12:48] 	Iter 39700 Done. | loss: 1.3052 | lr: 0.100000
+[05.14.22|23:13:13] 	Iter 39800 Done. | loss: 1.0867 | lr: 0.100000
+[05.14.22|23:13:37] 	Iter 39900 Done. | loss: 1.1107 | lr: 0.100000
+[05.14.22|23:13:58] 	train_mean_loss: 1.1019224907670702
+[05.14.22|23:13:58] Training epoch: 137
+[05.14.22|23:14:02] 	Iter 40000 Done. | loss: 0.9112 | lr: 0.100000
+[05.14.22|23:14:27] 	Iter 40100 Done. | loss: 0.9838 | lr: 0.100000
+[05.14.22|23:14:51] 	Iter 40200 Done. | loss: 0.8494 | lr: 0.100000
+[05.14.22|23:15:11] 	train_mean_loss: 1.0540718594375922
+[05.14.22|23:15:11] Training epoch: 138
+[05.14.22|23:15:17] 	Iter 40300 Done. | loss: 1.1965 | lr: 0.100000
+[05.14.22|23:15:41] 	Iter 40400 Done. | loss: 1.1200 | lr: 0.100000
+[05.14.22|23:16:06] 	Iter 40500 Done. | loss: 1.1188 | lr: 0.100000
+[05.14.22|23:16:23] 	train_mean_loss: 1.126251798097779
+[05.14.22|23:16:23] Training epoch: 139
+[05.14.22|23:16:31] 	Iter 40600 Done. | loss: 1.3949 | lr: 0.100000
+[05.14.22|23:16:55] 	Iter 40700 Done. | loss: 1.1028 | lr: 0.100000
+[05.14.22|23:17:20] 	Iter 40800 Done. | loss: 1.0086 | lr: 0.100000
+[05.14.22|23:17:35] 	train_mean_loss: 1.188527337547873
+[05.14.22|23:17:35] Training epoch: 140
+[05.14.22|23:17:45] 	Iter 40900 Done. | loss: 1.1867 | lr: 0.100000
+[05.14.22|23:18:09] 	Iter 41000 Done. | loss: 1.0923 | lr: 0.100000
+[05.14.22|23:18:34] 	Iter 41100 Done. | loss: 0.8513 | lr: 0.100000
+[05.14.22|23:18:48] 	train_mean_loss: 1.0814492801825206
+[05.14.22|23:18:48] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch140_model.pt.
+[05.14.22|23:18:48] Training epoch: 141
+[05.14.22|23:18:59] 	Iter 41200 Done. | loss: 1.2510 | lr: 0.100000
+[05.14.22|23:19:24] 	Iter 41300 Done. | loss: 1.0293 | lr: 0.100000
+[05.14.22|23:19:48] 	Iter 41400 Done. | loss: 0.9213 | lr: 0.100000
+[05.14.22|23:20:01] 	train_mean_loss: 1.0462559753534746
+[05.14.22|23:20:01] Training epoch: 142
+[05.14.22|23:20:13] 	Iter 41500 Done. | loss: 1.2124 | lr: 0.100000
+[05.14.22|23:20:38] 	Iter 41600 Done. | loss: 0.9935 | lr: 0.100000
+[05.14.22|23:21:03] 	Iter 41700 Done. | loss: 0.9007 | lr: 0.100000
+[05.14.22|23:21:14] 	train_mean_loss: 1.0345089731573247
+[05.14.22|23:21:14] Training epoch: 143
+[05.14.22|23:21:28] 	Iter 41800 Done. | loss: 1.1021 | lr: 0.100000
+[05.14.22|23:21:52] 	Iter 41900 Done. | loss: 0.9419 | lr: 0.100000
+[05.14.22|23:22:17] 	Iter 42000 Done. | loss: 0.9729 | lr: 0.100000
+[05.14.22|23:22:27] 	train_mean_loss: 1.0129602032453835
+[05.14.22|23:22:27] Training epoch: 144
+[05.14.22|23:22:42] 	Iter 42100 Done. | loss: 0.9701 | lr: 0.100000
+[05.14.22|23:23:06] 	Iter 42200 Done. | loss: 0.7743 | lr: 0.100000
+[05.14.22|23:23:31] 	Iter 42300 Done. | loss: 0.9208 | lr: 0.100000
+[05.14.22|23:23:39] 	train_mean_loss: 0.9647776081043036
+[05.14.22|23:23:39] Training epoch: 145
+[05.14.22|23:23:56] 	Iter 42400 Done. | loss: 1.1061 | lr: 0.100000
+[05.14.22|23:24:20] 	Iter 42500 Done. | loss: 0.9366 | lr: 0.100000
+[05.14.22|23:24:45] 	Iter 42600 Done. | loss: 0.8171 | lr: 0.100000
+[05.14.22|23:24:52] 	train_mean_loss: 1.0170801087301604
+[05.14.22|23:24:52] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch145_model.pt.
+[05.14.22|23:24:52] Training epoch: 146
+[05.14.22|23:25:10] 	Iter 42700 Done. | loss: 0.8772 | lr: 0.100000
+[05.14.22|23:25:35] 	Iter 42800 Done. | loss: 0.9594 | lr: 0.100000
+[05.14.22|23:26:00] 	Iter 42900 Done. | loss: 0.7497 | lr: 0.100000
+[05.14.22|23:26:05] 	train_mean_loss: 0.9276399932751039
+[05.14.22|23:26:05] Training epoch: 147
+[05.14.22|23:26:25] 	Iter 43000 Done. | loss: 1.0420 | lr: 0.100000
+[05.14.22|23:26:49] 	Iter 43100 Done. | loss: 0.6646 | lr: 0.100000
+[05.14.22|23:27:14] 	Iter 43200 Done. | loss: 0.7995 | lr: 0.100000
+[05.14.22|23:27:18] 	train_mean_loss: 0.9061621784352932
+[05.14.22|23:27:18] Training epoch: 148
+[05.14.22|23:27:39] 	Iter 43300 Done. | loss: 1.0758 | lr: 0.100000
+[05.14.22|23:28:03] 	Iter 43400 Done. | loss: 0.8261 | lr: 0.100000
+[05.14.22|23:28:28] 	Iter 43500 Done. | loss: 0.7614 | lr: 0.100000
+[05.14.22|23:28:31] 	train_mean_loss: 0.90441809868326
+[05.14.22|23:28:31] Training epoch: 149
+[05.14.22|23:28:53] 	Iter 43600 Done. | loss: 1.1111 | lr: 0.100000
+[05.14.22|23:29:17] 	Iter 43700 Done. | loss: 0.8927 | lr: 0.100000
+[05.14.22|23:29:42] 	Iter 43800 Done. | loss: 0.7662 | lr: 0.100000
+[05.14.22|23:29:43] 	train_mean_loss: 0.889540950457255
+[05.14.22|23:29:43] Training epoch: 150
+[05.14.22|23:30:07] 	Iter 43900 Done. | loss: 1.0041 | lr: 0.100000
+[05.14.22|23:30:31] 	Iter 44000 Done. | loss: 0.8631 | lr: 0.100000
+[05.14.22|23:30:55] 	train_mean_loss: 0.8860989417754063
+[05.14.22|23:30:55] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch150_model.pt.
+[05.14.22|23:30:55] Training epoch: 151
+[05.14.22|23:30:56] 	Iter 44100 Done. | loss: 1.5536 | lr: 0.100000
+[05.14.22|23:31:21] 	Iter 44200 Done. | loss: 1.7581 | lr: 0.100000
+[05.14.22|23:31:45] 	Iter 44300 Done. | loss: 2.1858 | lr: 0.100000
+[05.14.22|23:32:09] 	train_mean_loss: 2.021782009374528
+[05.14.22|23:32:09] Training epoch: 152
+[05.14.22|23:32:11] 	Iter 44400 Done. | loss: 1.4953 | lr: 0.100000
+[05.14.22|23:32:35] 	Iter 44500 Done. | loss: 1.8269 | lr: 0.100000
+[05.14.22|23:33:00] 	Iter 44600 Done. | loss: 2.1364 | lr: 0.100000
+[05.14.22|23:33:22] 	train_mean_loss: 2.0024806021833097
+[05.14.22|23:33:22] Training epoch: 153
+[05.14.22|23:33:26] 	Iter 44700 Done. | loss: 1.5254 | lr: 0.100000
+[05.14.22|23:33:50] 	Iter 44800 Done. | loss: 2.0550 | lr: 0.100000
+[05.14.22|23:34:15] 	Iter 44900 Done. | loss: 2.2322 | lr: 0.100000
+[05.14.22|23:34:35] 	train_mean_loss: 1.9862927105151067
+[05.14.22|23:34:35] Training epoch: 154
+[05.14.22|23:34:40] 	Iter 45000 Done. | loss: 1.6145 | lr: 0.100000
+[05.14.22|23:35:05] 	Iter 45100 Done. | loss: 1.8756 | lr: 0.100000
+[05.14.22|23:35:30] 	Iter 45200 Done. | loss: 2.2110 | lr: 0.100000
+[05.14.22|23:35:48] 	train_mean_loss: 1.9714803748390302
+[05.14.22|23:35:48] Training epoch: 155
+[05.14.22|23:35:55] 	Iter 45300 Done. | loss: 1.6394 | lr: 0.100000
+[05.14.22|23:36:20] 	Iter 45400 Done. | loss: 1.7738 | lr: 0.100000
+[05.14.22|23:36:44] 	Iter 45500 Done. | loss: 2.0847 | lr: 0.100000
+[05.14.22|23:37:02] 	train_mean_loss: 1.9584925961332256
+[05.14.22|23:37:02] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch155_model.pt.
+[05.14.22|23:37:02] Training epoch: 156
+[05.14.22|23:37:10] 	Iter 45600 Done. | loss: 1.5986 | lr: 0.100000
+[05.14.22|23:37:35] 	Iter 45700 Done. | loss: 1.8412 | lr: 0.100000
+[05.14.22|23:38:00] 	Iter 45800 Done. | loss: 2.2549 | lr: 0.100000
+[05.14.22|23:38:16] 	train_mean_loss: 1.9503007924475637
+[05.14.22|23:38:16] Training epoch: 157
+[05.14.22|23:38:25] 	Iter 45900 Done. | loss: 1.4742 | lr: 0.100000
+[05.14.22|23:38:50] 	Iter 46000 Done. | loss: 1.9514 | lr: 0.100000
+[05.14.22|23:39:15] 	Iter 46100 Done. | loss: 2.2473 | lr: 0.100000
+[05.14.22|23:39:29] 	train_mean_loss: 1.9479972906664116
+[05.14.22|23:39:29] Training epoch: 158
+[05.14.22|23:39:41] 	Iter 46200 Done. | loss: 1.6132 | lr: 0.100000
+[05.14.22|23:40:06] 	Iter 46300 Done. | loss: 1.9341 | lr: 0.100000
+[05.14.22|23:40:30] 	Iter 46400 Done. | loss: 2.2531 | lr: 0.100000
+[05.14.22|23:40:43] 	train_mean_loss: 1.9432433839557932
+[05.14.22|23:40:43] Training epoch: 159
+[05.14.22|23:40:56] 	Iter 46500 Done. | loss: 1.6008 | lr: 0.100000
+[05.14.22|23:41:20] 	Iter 46600 Done. | loss: 2.0212 | lr: 0.100000
+[05.14.22|23:41:45] 	Iter 46700 Done. | loss: 2.3816 | lr: 0.100000
+[05.14.22|23:41:57] 	train_mean_loss: 1.932845770501766
+[05.14.22|23:41:57] Training epoch: 160
+[05.14.22|23:42:11] 	Iter 46800 Done. | loss: 1.6539 | lr: 0.100000
+[05.14.22|23:42:35] 	Iter 46900 Done. | loss: 1.9013 | lr: 0.100000
+[05.14.22|23:43:00] 	Iter 47000 Done. | loss: 2.2999 | lr: 0.100000
+[05.14.22|23:43:10] 	train_mean_loss: 1.9319378149752715
+[05.14.22|23:43:10] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch160_model.pt.
+[05.14.22|23:43:10] Training epoch: 161
+[05.14.22|23:43:25] 	Iter 47100 Done. | loss: 1.5720 | lr: 0.100000
+[05.14.22|23:43:50] 	Iter 47200 Done. | loss: 2.0368 | lr: 0.100000
+[05.14.22|23:44:15] 	Iter 47300 Done. | loss: 2.2844 | lr: 0.100000
+[05.14.22|23:44:24] 	train_mean_loss: 1.9303072050315182
+[05.14.22|23:44:24] Training epoch: 162
+[05.14.22|23:44:41] 	Iter 47400 Done. | loss: 1.7614 | lr: 0.100000
+[05.14.22|23:45:06] 	Iter 47500 Done. | loss: 1.9977 | lr: 0.100000
+[05.14.22|23:45:31] 	Iter 47600 Done. | loss: 2.3473 | lr: 0.100000
+[05.14.22|23:45:37] 	train_mean_loss: 1.9279305253710066
+[05.14.22|23:45:37] Training epoch: 163
+[05.14.22|23:45:56] 	Iter 47700 Done. | loss: 1.5797 | lr: 0.100000
+[05.14.22|23:46:21] 	Iter 47800 Done. | loss: 1.9677 | lr: 0.100000
+[05.14.22|23:46:46] 	Iter 47900 Done. | loss: 2.2648 | lr: 0.100000
+[05.14.22|23:46:51] 	train_mean_loss: 1.9292661044873347
+[05.14.22|23:46:51] Training epoch: 164
+[05.14.22|23:47:11] 	Iter 48000 Done. | loss: 1.7155 | lr: 0.100000
+[05.14.22|23:47:36] 	Iter 48100 Done. | loss: 1.9784 | lr: 0.100000
+[05.14.22|23:48:01] 	Iter 48200 Done. | loss: 2.2866 | lr: 0.100000
+[05.14.22|23:48:05] 	train_mean_loss: 1.926733823049636
+[05.14.22|23:48:05] Training epoch: 165
+[05.14.22|23:48:26] 	Iter 48300 Done. | loss: 1.7648 | lr: 0.100000
+[05.14.22|23:48:51] 	Iter 48400 Done. | loss: 2.0627 | lr: 0.100000
+[05.14.22|23:49:16] 	Iter 48500 Done. | loss: 2.2930 | lr: 0.100000
+[05.14.22|23:49:18] 	train_mean_loss: 1.9208306297153033
+[05.14.22|23:49:18] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch165_model.pt.
+[05.14.22|23:49:18] Training epoch: 166
+[05.14.22|23:49:41] 	Iter 48600 Done. | loss: 1.7136 | lr: 0.100000
+[05.14.22|23:50:06] 	Iter 48700 Done. | loss: 2.1118 | lr: 0.100000
+[05.14.22|23:50:30] 	Iter 48800 Done. | loss: 2.2589 | lr: 0.100000
+[05.14.22|23:50:31] 	train_mean_loss: 1.9284907242878764
+[05.14.22|23:50:31] Training epoch: 167
+[05.14.22|23:50:56] 	Iter 48900 Done. | loss: 1.6843 | lr: 0.100000
+[05.14.22|23:51:21] 	Iter 49000 Done. | loss: 2.1072 | lr: 0.100000
+[05.14.22|23:51:45] 	train_mean_loss: 1.9278517888516795
+[05.14.22|23:51:45] Training epoch: 168
+[05.14.22|23:51:46] 	Iter 49100 Done. | loss: 1.5928 | lr: 0.100000
+[05.14.22|23:52:11] 	Iter 49200 Done. | loss: 1.8481 | lr: 0.100000
+[05.14.22|23:52:36] 	Iter 49300 Done. | loss: 2.2115 | lr: 0.100000
+[05.14.22|23:52:59] 	train_mean_loss: 1.9255469842832915
+[05.14.22|23:52:59] Training epoch: 169
+[05.14.22|23:53:02] 	Iter 49400 Done. | loss: 1.5398 | lr: 0.100000
+[05.14.22|23:53:27] 	Iter 49500 Done. | loss: 1.7629 | lr: 0.100000
+[05.14.22|23:53:51] 	Iter 49600 Done. | loss: 2.1600 | lr: 0.100000
+[05.14.22|23:54:13] 	train_mean_loss: 1.918280809509511
+[05.14.22|23:54:13] Training epoch: 170
+[05.14.22|23:54:17] 	Iter 49700 Done. | loss: 1.5568 | lr: 0.100000
+[05.14.22|23:54:42] 	Iter 49800 Done. | loss: 1.8319 | lr: 0.100000
+[05.14.22|23:55:06] 	Iter 49900 Done. | loss: 2.1133 | lr: 0.100000
+[05.14.22|23:55:26] 	train_mean_loss: 1.9213024904938782
+[05.14.22|23:55:26] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch170_model.pt.
+[05.14.22|23:55:26] Training epoch: 171
+[05.14.22|23:55:32] 	Iter 50000 Done. | loss: 1.5008 | lr: 0.100000
+[05.14.22|23:55:57] 	Iter 50100 Done. | loss: 1.8298 | lr: 0.100000
+[05.14.22|23:56:22] 	Iter 50200 Done. | loss: 2.1221 | lr: 0.100000
+[05.14.22|23:56:40] 	train_mean_loss: 1.9248503239787356
+[05.14.22|23:56:40] Training epoch: 172
+[05.14.22|23:56:47] 	Iter 50300 Done. | loss: 1.4491 | lr: 0.100000
+[05.14.22|23:57:12] 	Iter 50400 Done. | loss: 1.8172 | lr: 0.100000
+[05.14.22|23:57:37] 	Iter 50500 Done. | loss: 2.2024 | lr: 0.100000
+[05.14.22|23:57:54] 	train_mean_loss: 1.9241160949071248
+[05.14.22|23:57:54] Training epoch: 173
+[05.14.22|23:58:02] 	Iter 50600 Done. | loss: 1.5553 | lr: 0.100000
+[05.14.22|23:58:27] 	Iter 50700 Done. | loss: 1.9221 | lr: 0.100000
+[05.14.22|23:58:52] 	Iter 50800 Done. | loss: 2.1647 | lr: 0.100000
+[05.14.22|23:59:08] 	train_mean_loss: 1.920882253825259
+[05.14.22|23:59:08] Training epoch: 174
+[05.14.22|23:59:18] 	Iter 50900 Done. | loss: 1.6246 | lr: 0.100000
+[05.14.22|23:59:42] 	Iter 51000 Done. | loss: 1.8436 | lr: 0.100000
+[05.15.22|00:00:07] 	Iter 51100 Done. | loss: 2.1889 | lr: 0.100000
+[05.15.22|00:00:21] 	train_mean_loss: 1.9258217783201308
+[05.15.22|00:00:21] Training epoch: 175
+[05.15.22|00:00:33] 	Iter 51200 Done. | loss: 1.6283 | lr: 0.100000
+[05.15.22|00:00:57] 	Iter 51300 Done. | loss: 1.9636 | lr: 0.100000
+[05.15.22|00:01:23] 	Iter 51400 Done. | loss: 2.1795 | lr: 0.100000
+[05.15.22|00:01:35] 	train_mean_loss: 1.9178626890085182
+[05.15.22|00:01:35] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch175_model.pt.
+[05.15.22|00:01:35] Training epoch: 176
+[05.15.22|00:01:48] 	Iter 51500 Done. | loss: 1.5772 | lr: 0.100000
+[05.15.22|00:02:13] 	Iter 51600 Done. | loss: 2.0164 | lr: 0.100000
+[05.15.22|00:02:38] 	Iter 51700 Done. | loss: 2.2200 | lr: 0.100000
+[05.15.22|00:02:48] 	train_mean_loss: 1.9248379026951432
+[05.15.22|00:02:48] Training epoch: 177
+[05.15.22|00:03:03] 	Iter 51800 Done. | loss: 1.6240 | lr: 0.100000
+[05.15.22|00:03:28] 	Iter 51900 Done. | loss: 1.9583 | lr: 0.100000
+[05.15.22|00:03:53] 	Iter 52000 Done. | loss: 2.2289 | lr: 0.100000
+[05.15.22|00:04:02] 	train_mean_loss: 1.9106821401589582
+[05.15.22|00:04:02] Training epoch: 178
+[05.15.22|00:04:18] 	Iter 52100 Done. | loss: 1.5824 | lr: 0.100000
+[05.15.22|00:04:43] 	Iter 52200 Done. | loss: 1.9313 | lr: 0.100000
+[05.15.22|00:05:08] 	Iter 52300 Done. | loss: 2.2483 | lr: 0.100000
+[05.15.22|00:05:15] 	train_mean_loss: 1.9147806171657278
+[05.15.22|00:05:15] Training epoch: 179
+[05.15.22|00:05:33] 	Iter 52400 Done. | loss: 1.6336 | lr: 0.100000
+[05.15.22|00:05:58] 	Iter 52500 Done. | loss: 2.0162 | lr: 0.100000
+[05.15.22|00:06:23] 	Iter 52600 Done. | loss: 2.3130 | lr: 0.100000
+[05.15.22|00:06:30] 	train_mean_loss: 1.9170115861762949
+[05.15.22|00:06:30] Training epoch: 180
+[05.15.22|00:06:48] 	Iter 52700 Done. | loss: 1.8020 | lr: 0.100000
+[05.15.22|00:07:13] 	Iter 52800 Done. | loss: 2.0226 | lr: 0.100000
+[05.15.22|00:07:38] 	Iter 52900 Done. | loss: 2.1957 | lr: 0.100000
+[05.15.22|00:07:43] 	train_mean_loss: 1.9115333638223662
+[05.15.22|00:07:43] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch180_model.pt.
+[05.15.22|00:07:43] Training epoch: 181
+[05.15.22|00:08:04] 	Iter 53000 Done. | loss: 1.6841 | lr: 0.100000
+[05.15.22|00:08:28] 	Iter 53100 Done. | loss: 2.1295 | lr: 0.100000
+[05.15.22|00:08:53] 	Iter 53200 Done. | loss: 2.2554 | lr: 0.100000
+[05.15.22|00:08:57] 	train_mean_loss: 1.9086792996140565
+[05.15.22|00:08:57] Training epoch: 182
+[05.15.22|00:09:18] 	Iter 53300 Done. | loss: 1.6452 | lr: 0.100000
+[05.15.22|00:09:43] 	Iter 53400 Done. | loss: 1.9867 | lr: 0.100000
+[05.15.22|00:10:08] 	Iter 53500 Done. | loss: 2.2588 | lr: 0.100000
+[05.15.22|00:10:09] 	train_mean_loss: 1.9138619680793918
+[05.15.22|00:10:09] Training epoch: 183
+[05.15.22|00:10:33] 	Iter 53600 Done. | loss: 1.8564 | lr: 0.100000
+[05.15.22|00:10:58] 	Iter 53700 Done. | loss: 2.0741 | lr: 0.100000
+[05.15.22|00:11:23] 	Iter 53800 Done. | loss: 2.2438 | lr: 0.100000
+[05.15.22|00:11:23] 	train_mean_loss: 1.9132621268025871
+[05.15.22|00:11:23] Training epoch: 184
+[05.15.22|00:11:48] 	Iter 53900 Done. | loss: 1.7868 | lr: 0.100000
+[05.15.22|00:12:13] 	Iter 54000 Done. | loss: 2.1237 | lr: 0.100000
+[05.15.22|00:12:37] 	train_mean_loss: 1.9119320471270556
+[05.15.22|00:12:37] Training epoch: 185
+[05.15.22|00:12:38] 	Iter 54100 Done. | loss: 1.5226 | lr: 0.100000
+[05.15.22|00:13:03] 	Iter 54200 Done. | loss: 1.8516 | lr: 0.100000
+[05.15.22|00:13:28] 	Iter 54300 Done. | loss: 2.0625 | lr: 0.100000
+[05.15.22|00:13:50] 	train_mean_loss: 1.9102150907321853
+[05.15.22|00:13:50] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch185_model.pt.
+[05.15.22|00:13:50] Training epoch: 186
+[05.15.22|00:13:53] 	Iter 54400 Done. | loss: 1.4940 | lr: 0.100000
+[05.15.22|00:14:18] 	Iter 54500 Done. | loss: 1.7384 | lr: 0.100000
+[05.15.22|00:14:43] 	Iter 54600 Done. | loss: 2.1103 | lr: 0.100000
+[05.15.22|00:15:04] 	train_mean_loss: 1.9021583872587502
+[05.15.22|00:15:04] Training epoch: 187
+[05.15.22|00:15:09] 	Iter 54700 Done. | loss: 1.5213 | lr: 0.100000
+[05.15.22|00:15:33] 	Iter 54800 Done. | loss: 1.8192 | lr: 0.100000
+[05.15.22|00:15:58] 	Iter 54900 Done. | loss: 2.0542 | lr: 0.100000
+[05.15.22|00:16:17] 	train_mean_loss: 1.902828314271914
+[05.15.22|00:16:17] Training epoch: 188
+[05.15.22|00:16:23] 	Iter 55000 Done. | loss: 1.5490 | lr: 0.100000
+[05.15.22|00:16:48] 	Iter 55100 Done. | loss: 1.7775 | lr: 0.100000
+[05.15.22|00:17:13] 	Iter 55200 Done. | loss: 2.1428 | lr: 0.100000
+[05.15.22|00:17:31] 	train_mean_loss: 1.9005119407258066
+[05.15.22|00:17:31] Training epoch: 189
+[05.15.22|00:17:38] 	Iter 55300 Done. | loss: 1.5197 | lr: 0.100000
+[05.15.22|00:18:03] 	Iter 55400 Done. | loss: 1.8286 | lr: 0.100000
+[05.15.22|00:18:28] 	Iter 55500 Done. | loss: 2.1120 | lr: 0.100000
+[05.15.22|00:18:44] 	train_mean_loss: 1.897642125077799
+[05.15.22|00:18:44] Training epoch: 190
+[05.15.22|00:18:53] 	Iter 55600 Done. | loss: 1.5844 | lr: 0.100000
+[05.15.22|00:19:18] 	Iter 55700 Done. | loss: 1.8000 | lr: 0.100000
+[05.15.22|00:19:42] 	Iter 55800 Done. | loss: 2.2637 | lr: 0.100000
+[05.15.22|00:19:57] 	train_mean_loss: 1.9060835676128363
+[05.15.22|00:19:57] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch190_model.pt.
+[05.15.22|00:19:57] Training epoch: 191
+[05.15.22|00:20:08] 	Iter 55900 Done. | loss: 1.6523 | lr: 0.100000
+[05.15.22|00:20:32] 	Iter 56000 Done. | loss: 1.9018 | lr: 0.100000
+[05.15.22|00:20:57] 	Iter 56100 Done. | loss: 2.1777 | lr: 0.100000
+[05.15.22|00:21:11] 	train_mean_loss: 1.904245179121186
+[05.15.22|00:21:11] Training epoch: 192
+[05.15.22|00:21:23] 	Iter 56200 Done. | loss: 1.6796 | lr: 0.100000
+[05.15.22|00:21:48] 	Iter 56300 Done. | loss: 1.8790 | lr: 0.100000
+[05.15.22|00:22:12] 	Iter 56400 Done. | loss: 2.1618 | lr: 0.100000
+[05.15.22|00:22:24] 	train_mean_loss: 1.8979758303992602
+[05.15.22|00:22:24] Training epoch: 193
+[05.15.22|00:22:38] 	Iter 56500 Done. | loss: 1.6191 | lr: 0.100000
+[05.15.22|00:23:03] 	Iter 56600 Done. | loss: 1.9254 | lr: 0.100000
+[05.15.22|00:23:28] 	Iter 56700 Done. | loss: 2.2784 | lr: 0.100000
+[05.15.22|00:23:38] 	train_mean_loss: 1.8981889563352883
+[05.15.22|00:23:38] Training epoch: 194
+[05.15.22|00:23:53] 	Iter 56800 Done. | loss: 1.5612 | lr: 0.100000
+[05.15.22|00:24:17] 	Iter 56900 Done. | loss: 1.9712 | lr: 0.100000
+[05.15.22|00:24:42] 	Iter 57000 Done. | loss: 2.2079 | lr: 0.100000
+[05.15.22|00:24:51] 	train_mean_loss: 1.8973690320034415
+[05.15.22|00:24:51] Training epoch: 195
+[05.15.22|00:25:08] 	Iter 57100 Done. | loss: 1.7147 | lr: 0.100000
+[05.15.22|00:25:32] 	Iter 57200 Done. | loss: 1.8885 | lr: 0.100000
+[05.15.22|00:25:57] 	Iter 57300 Done. | loss: 2.2311 | lr: 0.100000
+[05.15.22|00:26:05] 	train_mean_loss: 1.90145677571394
+[05.15.22|00:26:05] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch195_model.pt.
+[05.15.22|00:26:05] Training epoch: 196
+[05.15.22|00:26:23] 	Iter 57400 Done. | loss: 1.6571 | lr: 0.100000
+[05.15.22|00:26:48] 	Iter 57500 Done. | loss: 2.0094 | lr: 0.100000
+[05.15.22|00:27:13] 	Iter 57600 Done. | loss: 2.2388 | lr: 0.100000
+[05.15.22|00:27:19] 	train_mean_loss: 1.892513980670851
+[05.15.22|00:27:19] Training epoch: 197
+[05.15.22|00:27:38] 	Iter 57700 Done. | loss: 1.7138 | lr: 0.100000
+[05.15.22|00:28:03] 	Iter 57800 Done. | loss: 2.0172 | lr: 0.100000
+[05.15.22|00:28:28] 	Iter 57900 Done. | loss: 2.2882 | lr: 0.100000
+[05.15.22|00:28:32] 	train_mean_loss: 1.8965418277954569
+[05.15.22|00:28:32] Training epoch: 198
+[05.15.22|00:28:53] 	Iter 58000 Done. | loss: 1.7114 | lr: 0.100000
+[05.15.22|00:29:18] 	Iter 58100 Done. | loss: 1.9868 | lr: 0.100000
+[05.15.22|00:29:43] 	Iter 58200 Done. | loss: 2.2425 | lr: 0.100000
+[05.15.22|00:29:46] 	train_mean_loss: 1.8905122178752407
+[05.15.22|00:29:46] Training epoch: 199
+[05.15.22|00:30:08] 	Iter 58300 Done. | loss: 1.5920 | lr: 0.100000
+[05.15.22|00:30:33] 	Iter 58400 Done. | loss: 1.9591 | lr: 0.100000
+[05.15.22|00:30:58] 	Iter 58500 Done. | loss: 2.2513 | lr: 0.100000
+[05.15.22|00:30:59] 	train_mean_loss: 1.891893023130845
+[05.15.22|00:30:59] Training epoch: 200
+[05.15.22|00:31:23] 	Iter 58600 Done. | loss: 1.7381 | lr: 0.100000
+[05.15.22|00:31:48] 	Iter 58700 Done. | loss: 2.0316 | lr: 0.100000
+[05.15.22|00:32:12] 	train_mean_loss: 1.8912545369595897
+[05.15.22|00:32:13] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch200_model.pt.
+[05.15.22|00:32:13] Training epoch: 201
+[05.15.22|00:32:13] 	Iter 58800 Done. | loss: 1.5196 | lr: 0.100000
+[05.15.22|00:32:38] 	Iter 58900 Done. | loss: 1.8231 | lr: 0.100000
+[05.15.22|00:33:02] 	Iter 59000 Done. | loss: 2.0227 | lr: 0.100000
+[05.15.22|00:33:26] 	train_mean_loss: 1.8836600293918533
+[05.15.22|00:33:26] Training epoch: 202
+[05.15.22|00:33:28] 	Iter 59100 Done. | loss: 1.5025 | lr: 0.100000
+[05.15.22|00:33:53] 	Iter 59200 Done. | loss: 1.7440 | lr: 0.100000
+[05.15.22|00:34:18] 	Iter 59300 Done. | loss: 2.0570 | lr: 0.100000
+[05.15.22|00:34:39] 	train_mean_loss: 1.886036741084793
+[05.15.22|00:34:39] Training epoch: 203
+[05.15.22|00:34:43] 	Iter 59400 Done. | loss: 1.4942 | lr: 0.100000
+[05.15.22|00:35:07] 	Iter 59500 Done. | loss: 1.8483 | lr: 0.100000
+[05.15.22|00:35:32] 	Iter 59600 Done. | loss: 2.1343 | lr: 0.100000
+[05.15.22|00:35:52] 	train_mean_loss: 1.8839019747818408
+[05.15.22|00:35:52] Training epoch: 204
+[05.15.22|00:35:57] 	Iter 59700 Done. | loss: 1.4609 | lr: 0.100000
+[05.15.22|00:36:22] 	Iter 59800 Done. | loss: 1.6830 | lr: 0.100000
+[05.15.22|00:36:47] 	Iter 59900 Done. | loss: 2.1418 | lr: 0.100000
+[05.15.22|00:37:05] 	train_mean_loss: 1.881671311903973
+[05.15.22|00:37:05] Training epoch: 205
+[05.15.22|00:37:12] 	Iter 60000 Done. | loss: 1.4782 | lr: 0.100000
+[05.15.22|00:37:37] 	Iter 60100 Done. | loss: 1.7959 | lr: 0.100000
+[05.15.22|00:38:02] 	Iter 60200 Done. | loss: 2.2102 | lr: 0.100000
+[05.15.22|00:38:19] 	train_mean_loss: 1.8839263895741936
+[05.15.22|00:38:19] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch205_model.pt.
+[05.15.22|00:38:19] Training epoch: 206
+[05.15.22|00:38:27] 	Iter 60300 Done. | loss: 1.5961 | lr: 0.100000
+[05.15.22|00:38:52] 	Iter 60400 Done. | loss: 1.8489 | lr: 0.100000
+[05.15.22|00:39:17] 	Iter 60500 Done. | loss: 2.1211 | lr: 0.100000
+[05.15.22|00:39:33] 	train_mean_loss: 1.8856261356347273
+[05.15.22|00:39:33] Training epoch: 207
+[05.15.22|00:39:42] 	Iter 60600 Done. | loss: 1.5537 | lr: 0.100000
+[05.15.22|00:40:07] 	Iter 60700 Done. | loss: 1.7344 | lr: 0.100000
+[05.15.22|00:40:32] 	Iter 60800 Done. | loss: 2.0622 | lr: 0.100000
+[05.15.22|00:40:46] 	train_mean_loss: 1.8769561794339393
+[05.15.22|00:40:46] Training epoch: 208
+[05.15.22|00:40:57] 	Iter 60900 Done. | loss: 1.5886 | lr: 0.100000
+[05.15.22|00:41:22] 	Iter 61000 Done. | loss: 1.9686 | lr: 0.100000
+[05.15.22|00:41:47] 	Iter 61100 Done. | loss: 2.0917 | lr: 0.100000
+[05.15.22|00:41:59] 	train_mean_loss: 1.8780160169212186
+[05.15.22|00:41:59] Training epoch: 209
+[05.15.22|00:42:12] 	Iter 61200 Done. | loss: 1.5265 | lr: 0.100000
+[05.15.22|00:42:37] 	Iter 61300 Done. | loss: 1.9123 | lr: 0.100000
+[05.15.22|00:43:02] 	Iter 61400 Done. | loss: 2.1545 | lr: 0.100000
+[05.15.22|00:43:13] 	train_mean_loss: 1.8793929535515455
+[05.15.22|00:43:13] Training epoch: 210
+[05.15.22|00:43:27] 	Iter 61500 Done. | loss: 1.6317 | lr: 0.100000
+[05.15.22|00:43:52] 	Iter 61600 Done. | loss: 1.9511 | lr: 0.100000
+[05.15.22|00:44:17] 	Iter 61700 Done. | loss: 2.2370 | lr: 0.100000
+[05.15.22|00:44:27] 	train_mean_loss: 1.8766219036108782
+[05.15.22|00:44:27] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch210_model.pt.
+[05.15.22|00:44:27] Training epoch: 211
+[05.15.22|00:44:42] 	Iter 61800 Done. | loss: 1.5710 | lr: 0.100000
+[05.15.22|00:45:07] 	Iter 61900 Done. | loss: 1.9323 | lr: 0.100000
+[05.15.22|00:45:32] 	Iter 62000 Done. | loss: 2.1863 | lr: 0.100000
+[05.15.22|00:45:40] 	train_mean_loss: 1.8816282976241339
+[05.15.22|00:45:40] Training epoch: 212
+[05.15.22|00:45:58] 	Iter 62100 Done. | loss: 1.7101 | lr: 0.100000
+[05.15.22|00:46:22] 	Iter 62200 Done. | loss: 1.9981 | lr: 0.100000
+[05.15.22|00:46:47] 	Iter 62300 Done. | loss: 2.3144 | lr: 0.100000
+[05.15.22|00:46:54] 	train_mean_loss: 1.8754669342722212
+[05.15.22|00:46:54] Training epoch: 213
+[05.15.22|00:47:13] 	Iter 62400 Done. | loss: 1.6153 | lr: 0.100000
+[05.15.22|00:47:38] 	Iter 62500 Done. | loss: 1.9692 | lr: 0.100000
+[05.15.22|00:48:02] 	Iter 62600 Done. | loss: 2.0939 | lr: 0.100000
+[05.15.22|00:48:08] 	train_mean_loss: 1.8760261507261367
+[05.15.22|00:48:08] Training epoch: 214
+[05.15.22|00:48:28] 	Iter 62700 Done. | loss: 1.6923 | lr: 0.100000
+[05.15.22|00:48:53] 	Iter 62800 Done. | loss: 2.0165 | lr: 0.100000
+[05.15.22|00:49:18] 	Iter 62900 Done. | loss: 2.2384 | lr: 0.100000
+[05.15.22|00:49:21] 	train_mean_loss: 1.875668959147265
+[05.15.22|00:49:21] Training epoch: 215
+[05.15.22|00:49:43] 	Iter 63000 Done. | loss: 1.6447 | lr: 0.100000
+[05.15.22|00:50:08] 	Iter 63100 Done. | loss: 1.9719 | lr: 0.100000
+[05.15.22|00:50:33] 	Iter 63200 Done. | loss: 2.2190 | lr: 0.100000
+[05.15.22|00:50:35] 	train_mean_loss: 1.871587292677691
+[05.15.22|00:50:35] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch215_model.pt.
+[05.15.22|00:50:35] Training epoch: 216
+[05.15.22|00:50:59] 	Iter 63300 Done. | loss: 1.6144 | lr: 0.100000
+[05.15.22|00:51:24] 	Iter 63400 Done. | loss: 2.0809 | lr: 0.100000
+[05.15.22|00:51:49] 	Iter 63500 Done. | loss: 2.1902 | lr: 0.100000
+[05.15.22|00:51:50] 	train_mean_loss: 1.86939833521032
+[05.15.22|00:51:50] Training epoch: 217
+[05.15.22|00:52:14] 	Iter 63600 Done. | loss: 1.7213 | lr: 0.100000
+[05.15.22|00:52:39] 	Iter 63700 Done. | loss: 2.0338 | lr: 0.100000
+[05.15.22|00:53:03] 	train_mean_loss: 1.8679717811597447
+[05.15.22|00:53:03] Training epoch: 218
+[05.15.22|00:53:04] 	Iter 63800 Done. | loss: 1.4608 | lr: 0.100000
+[05.15.22|00:53:29] 	Iter 63900 Done. | loss: 1.6653 | lr: 0.100000
+[05.15.22|00:53:54] 	Iter 64000 Done. | loss: 1.9657 | lr: 0.100000
+[05.15.22|00:54:16] 	train_mean_loss: 1.864711389249685
+[05.15.22|00:54:16] Training epoch: 219
+[05.15.22|00:54:19] 	Iter 64100 Done. | loss: 1.4721 | lr: 0.100000
+[05.15.22|00:54:44] 	Iter 64200 Done. | loss: 1.8600 | lr: 0.100000
+[05.15.22|00:55:09] 	Iter 64300 Done. | loss: 1.9776 | lr: 0.100000
+[05.15.22|00:55:30] 	train_mean_loss: 1.8617036079062896
+[05.15.22|00:55:30] Training epoch: 220
+[05.15.22|00:55:34] 	Iter 64400 Done. | loss: 1.4670 | lr: 0.100000
+[05.15.22|00:55:59] 	Iter 64500 Done. | loss: 1.8230 | lr: 0.100000
+[05.15.22|00:56:24] 	Iter 64600 Done. | loss: 2.1107 | lr: 0.100000
+[05.15.22|00:56:44] 	train_mean_loss: 1.8645520031857652
+[05.15.22|00:56:44] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch220_model.pt.
+[05.15.22|00:56:44] Training epoch: 221
+[05.15.22|00:56:49] 	Iter 64700 Done. | loss: 1.5075 | lr: 0.100000
+[05.15.22|00:57:14] 	Iter 64800 Done. | loss: 1.8320 | lr: 0.100000
+[05.15.22|00:57:39] 	Iter 64900 Done. | loss: 2.1263 | lr: 0.100000
+[05.15.22|00:57:57] 	train_mean_loss: 1.8648048537929043
+[05.15.22|00:57:57] Training epoch: 222
+[05.15.22|00:58:04] 	Iter 65000 Done. | loss: 1.5247 | lr: 0.100000
+[05.15.22|00:58:30] 	Iter 65100 Done. | loss: 1.8079 | lr: 0.100000
+[05.15.22|00:58:54] 	Iter 65200 Done. | loss: 2.0302 | lr: 0.100000
+[05.15.22|00:59:11] 	train_mean_loss: 1.865383084533977
+[05.15.22|00:59:11] Training epoch: 223
+[05.15.22|00:59:20] 	Iter 65300 Done. | loss: 1.5097 | lr: 0.100000
+[05.15.22|00:59:45] 	Iter 65400 Done. | loss: 1.7812 | lr: 0.100000
+[05.15.22|01:00:09] 	Iter 65500 Done. | loss: 2.2338 | lr: 0.100000
+[05.15.22|01:00:25] 	train_mean_loss: 1.8633175573381437
+[05.15.22|01:00:25] Training epoch: 224
+[05.15.22|01:00:35] 	Iter 65600 Done. | loss: 1.4496 | lr: 0.100000
+[05.15.22|01:01:00] 	Iter 65700 Done. | loss: 1.7885 | lr: 0.100000
+[05.15.22|01:01:25] 	Iter 65800 Done. | loss: 2.1715 | lr: 0.100000
+[05.15.22|01:01:39] 	train_mean_loss: 1.8686941833723159
+[05.15.22|01:01:39] Training epoch: 225
+[05.15.22|01:01:50] 	Iter 65900 Done. | loss: 1.5042 | lr: 0.100000
+[05.15.22|01:02:15] 	Iter 66000 Done. | loss: 1.8869 | lr: 0.100000
+[05.15.22|01:02:40] 	Iter 66100 Done. | loss: 2.0891 | lr: 0.100000
+[05.15.22|01:02:52] 	train_mean_loss: 1.8556134826472017
+[05.15.22|01:02:52] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch225_model.pt.
+[05.15.22|01:02:52] Training epoch: 226
+[05.15.22|01:03:06] 	Iter 66200 Done. | loss: 1.6648 | lr: 0.100000
+[05.15.22|01:03:30] 	Iter 66300 Done. | loss: 1.8731 | lr: 0.100000
+[05.15.22|01:03:55] 	Iter 66400 Done. | loss: 2.1945 | lr: 0.100000
+[05.15.22|01:04:06] 	train_mean_loss: 1.8599023677053905
+[05.15.22|01:04:06] Training epoch: 227
+[05.15.22|01:04:21] 	Iter 66500 Done. | loss: 1.6063 | lr: 0.100000
+[05.15.22|01:04:46] 	Iter 66600 Done. | loss: 1.9394 | lr: 0.100000
+[05.15.22|01:05:11] 	Iter 66700 Done. | loss: 2.2072 | lr: 0.100000
+[05.15.22|01:05:20] 	train_mean_loss: 1.8587318403380257
+[05.15.22|01:05:20] Training epoch: 228
+[05.15.22|01:05:36] 	Iter 66800 Done. | loss: 1.6266 | lr: 0.100000
+[05.15.22|01:06:01] 	Iter 66900 Done. | loss: 1.8937 | lr: 0.100000
+[05.15.22|01:06:26] 	Iter 67000 Done. | loss: 2.1463 | lr: 0.100000
+[05.15.22|01:06:34] 	train_mean_loss: 1.8615691787531587
+[05.15.22|01:06:34] Training epoch: 229
+[05.15.22|01:06:51] 	Iter 67100 Done. | loss: 1.6197 | lr: 0.100000
+[05.15.22|01:07:17] 	Iter 67200 Done. | loss: 1.9088 | lr: 0.100000
+[05.15.22|01:07:42] 	Iter 67300 Done. | loss: 2.2009 | lr: 0.100000
+[05.15.22|01:07:48] 	train_mean_loss: 1.8562265233117707
+[05.15.22|01:07:48] Training epoch: 230
+[05.15.22|01:08:07] 	Iter 67400 Done. | loss: 1.6941 | lr: 0.100000
+[05.15.22|01:08:32] 	Iter 67500 Done. | loss: 1.9682 | lr: 0.100000
+[05.15.22|01:08:57] 	Iter 67600 Done. | loss: 2.2330 | lr: 0.100000
+[05.15.22|01:09:01] 	train_mean_loss: 1.8566460179633835
+[05.15.22|01:09:01] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch230_model.pt.
+[05.15.22|01:09:01] Training epoch: 231
+[05.15.22|01:09:22] 	Iter 67700 Done. | loss: 1.6134 | lr: 0.100000
+[05.15.22|01:09:47] 	Iter 67800 Done. | loss: 1.9816 | lr: 0.100000
+[05.15.22|01:10:12] 	Iter 67900 Done. | loss: 2.1004 | lr: 0.100000
+[05.15.22|01:10:15] 	train_mean_loss: 1.853609091976062
+[05.15.22|01:10:15] Training epoch: 232
+[05.15.22|01:10:37] 	Iter 68000 Done. | loss: 1.6235 | lr: 0.100000
+[05.15.22|01:11:02] 	Iter 68100 Done. | loss: 1.9565 | lr: 0.100000
+[05.15.22|01:11:27] 	Iter 68200 Done. | loss: 2.2118 | lr: 0.100000
+[05.15.22|01:11:29] 	train_mean_loss: 1.858584616054483
+[05.15.22|01:11:29] Training epoch: 233
+[05.15.22|01:11:52] 	Iter 68300 Done. | loss: 1.6755 | lr: 0.100000
+[05.15.22|01:12:17] 	Iter 68400 Done. | loss: 2.0825 | lr: 0.100000
+[05.15.22|01:12:42] 	Iter 68500 Done. | loss: 2.2248 | lr: 0.100000
+[05.15.22|01:12:42] 	train_mean_loss: 1.8522650875201843
+[05.15.22|01:12:42] Training epoch: 234
+[05.15.22|01:13:07] 	Iter 68600 Done. | loss: 1.7816 | lr: 0.100000
+[05.15.22|01:13:32] 	Iter 68700 Done. | loss: 1.8838 | lr: 0.100000
+[05.15.22|01:13:56] 	train_mean_loss: 1.8489924993644766
+[05.15.22|01:13:56] Training epoch: 235
+[05.15.22|01:13:57] 	Iter 68800 Done. | loss: 1.4811 | lr: 0.100000
+[05.15.22|01:14:22] 	Iter 68900 Done. | loss: 1.6529 | lr: 0.100000
+[05.15.22|01:14:47] 	Iter 69000 Done. | loss: 1.9916 | lr: 0.100000
+[05.15.22|01:15:09] 	train_mean_loss: 1.8567911236464572
+[05.15.22|01:15:09] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch235_model.pt.
+[05.15.22|01:15:09] Training epoch: 236
+[05.15.22|01:15:12] 	Iter 69100 Done. | loss: 1.5202 | lr: 0.100000
+[05.15.22|01:15:37] 	Iter 69200 Done. | loss: 1.8163 | lr: 0.100000
+[05.15.22|01:16:02] 	Iter 69300 Done. | loss: 2.0213 | lr: 0.100000
+[05.15.22|01:16:23] 	train_mean_loss: 1.8474040566658487
+[05.15.22|01:16:23] Training epoch: 237
+[05.15.22|01:16:27] 	Iter 69400 Done. | loss: 1.4956 | lr: 0.100000
+[05.15.22|01:16:52] 	Iter 69500 Done. | loss: 1.7418 | lr: 0.100000
+[05.15.22|01:17:17] 	Iter 69600 Done. | loss: 1.9755 | lr: 0.100000
+[05.15.22|01:17:36] 	train_mean_loss: 1.852080188640932
+[05.15.22|01:17:36] Training epoch: 238
+[05.15.22|01:17:43] 	Iter 69700 Done. | loss: 1.5873 | lr: 0.100000
+[05.15.22|01:18:07] 	Iter 69800 Done. | loss: 1.7906 | lr: 0.100000
+[05.15.22|01:18:33] 	Iter 69900 Done. | loss: 2.0407 | lr: 0.100000
+[05.15.22|01:18:50] 	train_mean_loss: 1.8498808027935676
+[05.15.22|01:18:50] Training epoch: 239
+[05.15.22|01:18:58] 	Iter 70000 Done. | loss: 1.5690 | lr: 0.100000
+[05.15.22|01:19:23] 	Iter 70100 Done. | loss: 1.8056 | lr: 0.100000
+[05.15.22|01:19:47] 	Iter 70200 Done. | loss: 2.0716 | lr: 0.100000
+[05.15.22|01:20:03] 	train_mean_loss: 1.8480176653991751
+[05.15.22|01:20:03] Training epoch: 240
+[05.15.22|01:20:13] 	Iter 70300 Done. | loss: 1.5585 | lr: 0.100000
+[05.15.22|01:20:37] 	Iter 70400 Done. | loss: 1.7404 | lr: 0.100000
+[05.15.22|01:21:02] 	Iter 70500 Done. | loss: 2.0594 | lr: 0.100000
+[05.15.22|01:21:17] 	train_mean_loss: 1.8506171533039637
+[05.15.22|01:21:17] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch240_model.pt.
+[05.15.22|01:21:17] Training epoch: 241
+[05.15.22|01:21:27] 	Iter 70600 Done. | loss: 1.5228 | lr: 0.100000
+[05.15.22|01:21:52] 	Iter 70700 Done. | loss: 1.8232 | lr: 0.100000
+[05.15.22|01:22:17] 	Iter 70800 Done. | loss: 2.0587 | lr: 0.100000
+[05.15.22|01:22:30] 	train_mean_loss: 1.8525546245834454
+[05.15.22|01:22:30] Training epoch: 242
+[05.15.22|01:22:42] 	Iter 70900 Done. | loss: 1.5139 | lr: 0.100000
+[05.15.22|01:23:07] 	Iter 71000 Done. | loss: 1.9019 | lr: 0.100000
+[05.15.22|01:23:32] 	Iter 71100 Done. | loss: 2.1702 | lr: 0.100000
+[05.15.22|01:23:44] 	train_mean_loss: 1.8464827906517756
+[05.15.22|01:23:44] Training epoch: 243
+[05.15.22|01:23:57] 	Iter 71200 Done. | loss: 1.4967 | lr: 0.100000
+[05.15.22|01:24:22] 	Iter 71300 Done. | loss: 1.9074 | lr: 0.100000
+[05.15.22|01:24:47] 	Iter 71400 Done. | loss: 2.0867 | lr: 0.100000
+[05.15.22|01:24:57] 	train_mean_loss: 1.8434531396749068
+[05.15.22|01:24:57] Training epoch: 244
+[05.15.22|01:25:12] 	Iter 71500 Done. | loss: 1.5111 | lr: 0.100000
+[05.15.22|01:25:37] 	Iter 71600 Done. | loss: 1.9599 | lr: 0.100000
+[05.15.22|01:26:02] 	Iter 71700 Done. | loss: 2.2433 | lr: 0.100000
+[05.15.22|01:26:11] 	train_mean_loss: 1.853057852407702
+[05.15.22|01:26:11] Training epoch: 245
+[05.15.22|01:26:27] 	Iter 71800 Done. | loss: 1.6799 | lr: 0.100000
+[05.15.22|01:26:52] 	Iter 71900 Done. | loss: 1.8158 | lr: 0.100000
+[05.15.22|01:27:17] 	Iter 72000 Done. | loss: 2.2148 | lr: 0.100000
+[05.15.22|01:27:24] 	train_mean_loss: 1.845179979493018
+[05.15.22|01:27:24] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch245_model.pt.
+[05.15.22|01:27:24] Training epoch: 246
+[05.15.22|01:27:42] 	Iter 72100 Done. | loss: 1.5991 | lr: 0.100000
+[05.15.22|01:28:08] 	Iter 72200 Done. | loss: 2.0031 | lr: 0.100000
+[05.15.22|01:28:33] 	Iter 72300 Done. | loss: 2.1080 | lr: 0.100000
+[05.15.22|01:28:38] 	train_mean_loss: 1.8412758756657035
+[05.15.22|01:28:38] Training epoch: 247
+[05.15.22|01:28:58] 	Iter 72400 Done. | loss: 1.6337 | lr: 0.100000
+[05.15.22|01:29:23] 	Iter 72500 Done. | loss: 1.9714 | lr: 0.100000
+[05.15.22|01:29:48] 	Iter 72600 Done. | loss: 2.1170 | lr: 0.100000
+[05.15.22|01:29:52] 	train_mean_loss: 1.844030580147594
+[05.15.22|01:29:52] Training epoch: 248
+[05.15.22|01:30:13] 	Iter 72700 Done. | loss: 1.7095 | lr: 0.100000
+[05.15.22|01:30:38] 	Iter 72800 Done. | loss: 1.8966 | lr: 0.100000
+[05.15.22|01:31:04] 	Iter 72900 Done. | loss: 2.1994 | lr: 0.100000
+[05.15.22|01:31:07] 	train_mean_loss: 1.8414458559483897
+[05.15.22|01:31:07] Training epoch: 249
+[05.15.22|01:31:29] 	Iter 73000 Done. | loss: 1.7013 | lr: 0.100000
+[05.15.22|01:31:54] 	Iter 73100 Done. | loss: 1.9371 | lr: 0.100000
+[05.15.22|01:32:19] 	Iter 73200 Done. | loss: 2.1407 | lr: 0.100000
+[05.15.22|01:32:21] 	train_mean_loss: 1.841714243905074
+[05.15.22|01:32:21] Training epoch: 250
+[05.15.22|01:32:45] 	Iter 73300 Done. | loss: 1.6976 | lr: 0.100000
+[05.15.22|01:33:10] 	Iter 73400 Done. | loss: 2.0486 | lr: 0.100000
+[05.15.22|01:33:35] 	train_mean_loss: 1.8470056259713206
+[05.15.22|01:33:35] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch250_model.pt.
+[05.15.22|01:33:35] Training epoch: 251
+[05.15.22|01:33:35] 	Iter 73500 Done. | loss: 1.4636 | lr: 0.010000
+[05.15.22|01:34:00] 	Iter 73600 Done. | loss: 1.6944 | lr: 0.010000
+[05.15.22|01:34:26] 	Iter 73700 Done. | loss: 1.9478 | lr: 0.010000
+[05.15.22|01:34:49] 	train_mean_loss: 1.7723882291592707
+[05.15.22|01:34:49] Training epoch: 252
+[05.15.22|01:34:51] 	Iter 73800 Done. | loss: 1.3691 | lr: 0.010000
+[05.15.22|01:35:16] 	Iter 73900 Done. | loss: 1.7411 | lr: 0.010000
+[05.15.22|01:35:42] 	Iter 74000 Done. | loss: 1.9420 | lr: 0.010000
+[05.15.22|01:36:03] 	train_mean_loss: 1.7533334063834884
+[05.15.22|01:36:03] Training epoch: 253
+[05.15.22|01:36:07] 	Iter 74100 Done. | loss: 1.2997 | lr: 0.010000
+[05.15.22|01:36:32] 	Iter 74200 Done. | loss: 1.5908 | lr: 0.010000
+[05.15.22|01:36:57] 	Iter 74300 Done. | loss: 1.9262 | lr: 0.010000
+[05.15.22|01:37:17] 	train_mean_loss: 1.7451868868198523
+[05.15.22|01:37:17] Training epoch: 254
+[05.15.22|01:37:22] 	Iter 74400 Done. | loss: 1.4401 | lr: 0.010000
+[05.15.22|01:37:47] 	Iter 74500 Done. | loss: 1.6100 | lr: 0.010000
+[05.15.22|01:38:12] 	Iter 74600 Done. | loss: 1.9743 | lr: 0.010000
+[05.15.22|01:38:31] 	train_mean_loss: 1.742822759005488
+[05.15.22|01:38:31] Training epoch: 255
+[05.15.22|01:38:37] 	Iter 74700 Done. | loss: 1.4603 | lr: 0.010000
+[05.15.22|01:39:02] 	Iter 74800 Done. | loss: 1.6719 | lr: 0.010000
+[05.15.22|01:39:27] 	Iter 74900 Done. | loss: 1.9572 | lr: 0.010000
+[05.15.22|01:39:45] 	train_mean_loss: 1.735107646101997
+[05.15.22|01:39:45] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch255_model.pt.
+[05.15.22|01:39:45] Training epoch: 256
+[05.15.22|01:39:53] 	Iter 75000 Done. | loss: 1.5214 | lr: 0.010000
+[05.15.22|01:40:18] 	Iter 75100 Done. | loss: 1.6871 | lr: 0.010000
+[05.15.22|01:40:43] 	Iter 75200 Done. | loss: 2.0054 | lr: 0.010000
+[05.15.22|01:40:59] 	train_mean_loss: 1.732886547134036
+[05.15.22|01:40:59] Training epoch: 257
+[05.15.22|01:41:08] 	Iter 75300 Done. | loss: 1.4889 | lr: 0.010000
+[05.15.22|01:41:34] 	Iter 75400 Done. | loss: 1.7097 | lr: 0.010000
+[05.15.22|01:41:59] 	Iter 75500 Done. | loss: 1.9570 | lr: 0.010000
+[05.15.22|01:42:13] 	train_mean_loss: 1.7263036228361583
+[05.15.22|01:42:13] Training epoch: 258
+[05.15.22|01:42:24] 	Iter 75600 Done. | loss: 1.4519 | lr: 0.010000
+[05.15.22|01:42:49] 	Iter 75700 Done. | loss: 1.7657 | lr: 0.010000
+[05.15.22|01:43:14] 	Iter 75800 Done. | loss: 2.0213 | lr: 0.010000
+[05.15.22|01:43:27] 	train_mean_loss: 1.7295196129351247
+[05.15.22|01:43:27] Training epoch: 259
+[05.15.22|01:43:40] 	Iter 75900 Done. | loss: 1.4190 | lr: 0.010000
+[05.15.22|01:44:05] 	Iter 76000 Done. | loss: 1.6267 | lr: 0.010000
+[05.15.22|01:44:30] 	Iter 76100 Done. | loss: 1.9963 | lr: 0.010000
+[05.15.22|01:44:41] 	train_mean_loss: 1.7234710203547057
+[05.15.22|01:44:41] Training epoch: 260
+[05.15.22|01:44:55] 	Iter 76200 Done. | loss: 1.4838 | lr: 0.010000
+[05.15.22|01:45:20] 	Iter 76300 Done. | loss: 1.6432 | lr: 0.010000
+[05.15.22|01:45:45] 	Iter 76400 Done. | loss: 2.0767 | lr: 0.010000
+[05.15.22|01:45:55] 	train_mean_loss: 1.7184548268512803
+[05.15.22|01:45:55] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch260_model.pt.
+[05.15.22|01:45:55] Training epoch: 261
+[05.15.22|01:46:11] 	Iter 76500 Done. | loss: 1.4653 | lr: 0.010000
+[05.15.22|01:46:36] 	Iter 76600 Done. | loss: 1.7886 | lr: 0.010000
+[05.15.22|01:47:01] 	Iter 76700 Done. | loss: 2.0345 | lr: 0.010000
+[05.15.22|01:47:09] 	train_mean_loss: 1.7178612363581756
+[05.15.22|01:47:09] Training epoch: 262
+[05.15.22|01:47:26] 	Iter 76800 Done. | loss: 1.4615 | lr: 0.010000
+[05.15.22|01:47:51] 	Iter 76900 Done. | loss: 1.7873 | lr: 0.010000
+[05.15.22|01:48:16] 	Iter 77000 Done. | loss: 2.0399 | lr: 0.010000
+[05.15.22|01:48:23] 	train_mean_loss: 1.7145709780608716
+[05.15.22|01:48:23] Training epoch: 263
+[05.15.22|01:48:41] 	Iter 77100 Done. | loss: 1.5174 | lr: 0.010000
+[05.15.22|01:49:06] 	Iter 77200 Done. | loss: 1.7014 | lr: 0.010000
+[05.15.22|01:49:31] 	Iter 77300 Done. | loss: 2.0362 | lr: 0.010000
+[05.15.22|01:49:36] 	train_mean_loss: 1.7126089541279539
+[05.15.22|01:49:36] Training epoch: 264
+[05.15.22|01:49:56] 	Iter 77400 Done. | loss: 1.4819 | lr: 0.010000
+[05.15.22|01:50:21] 	Iter 77500 Done. | loss: 1.7331 | lr: 0.010000
+[05.15.22|01:50:46] 	Iter 77600 Done. | loss: 1.9910 | lr: 0.010000
+[05.15.22|01:50:49] 	train_mean_loss: 1.7036467218885616
+[05.15.22|01:50:49] Training epoch: 265
+[05.15.22|01:51:11] 	Iter 77700 Done. | loss: 1.4907 | lr: 0.010000
+[05.15.22|01:51:36] 	Iter 77800 Done. | loss: 1.8060 | lr: 0.010000
+[05.15.22|01:52:01] 	Iter 77900 Done. | loss: 1.9800 | lr: 0.010000
+[05.15.22|01:52:04] 	train_mean_loss: 1.7044679782017558
+[05.15.22|01:52:04] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch265_model.pt.
+[05.15.22|01:52:04] Training epoch: 266
+[05.15.22|01:52:27] 	Iter 78000 Done. | loss: 1.5052 | lr: 0.010000
+[05.15.22|01:52:52] 	Iter 78100 Done. | loss: 1.8148 | lr: 0.010000
+[05.15.22|01:53:17] 	Iter 78200 Done. | loss: 1.9905 | lr: 0.010000
+[05.15.22|01:53:18] 	train_mean_loss: 1.6967439197358631
+[05.15.22|01:53:18] Training epoch: 267
+[05.15.22|01:53:42] 	Iter 78300 Done. | loss: 1.6207 | lr: 0.010000
+[05.15.22|01:54:07] 	Iter 78400 Done. | loss: 1.8200 | lr: 0.010000
+[05.15.22|01:54:32] 	train_mean_loss: 1.7001013155697153
+[05.15.22|01:54:32] Training epoch: 268
+[05.15.22|01:54:33] 	Iter 78500 Done. | loss: 1.2829 | lr: 0.010000
+[05.15.22|01:54:58] 	Iter 78600 Done. | loss: 1.6289 | lr: 0.010000
+[05.15.22|01:55:23] 	Iter 78700 Done. | loss: 1.8835 | lr: 0.010000
+[05.15.22|01:55:46] 	train_mean_loss: 1.6968588014038242
+[05.15.22|01:55:46] Training epoch: 269
+[05.15.22|01:55:48] 	Iter 78800 Done. | loss: 1.3483 | lr: 0.010000
+[05.15.22|01:56:13] 	Iter 78900 Done. | loss: 1.5844 | lr: 0.010000
+[05.15.22|01:56:38] 	Iter 79000 Done. | loss: 1.9111 | lr: 0.010000
+[05.15.22|01:57:00] 	train_mean_loss: 1.6967374820287535
+[05.15.22|01:57:00] Training epoch: 270
+[05.15.22|01:57:04] 	Iter 79100 Done. | loss: 1.2979 | lr: 0.010000
+[05.15.22|01:57:29] 	Iter 79200 Done. | loss: 1.6197 | lr: 0.010000
+[05.15.22|01:57:54] 	Iter 79300 Done. | loss: 1.9094 | lr: 0.010000
+[05.15.22|01:58:13] 	train_mean_loss: 1.6954226157292216
+[05.15.22|01:58:13] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch270_model.pt.
+[05.15.22|01:58:13] Training epoch: 271
+[05.15.22|01:58:19] 	Iter 79400 Done. | loss: 1.3563 | lr: 0.010000
+[05.15.22|01:58:44] 	Iter 79500 Done. | loss: 1.7323 | lr: 0.010000
+[05.15.22|01:59:09] 	Iter 79600 Done. | loss: 1.9169 | lr: 0.010000
+[05.15.22|01:59:27] 	train_mean_loss: 1.6920453938497166
+[05.15.22|01:59:27] Training epoch: 272
+[05.15.22|01:59:35] 	Iter 79700 Done. | loss: 1.3929 | lr: 0.010000
+[05.15.22|02:00:00] 	Iter 79800 Done. | loss: 1.6188 | lr: 0.010000
+[05.15.22|02:00:25] 	Iter 79900 Done. | loss: 1.9122 | lr: 0.010000
+[05.15.22|02:00:42] 	train_mean_loss: 1.6900433780384712
+[05.15.22|02:00:42] Training epoch: 273
+[05.15.22|02:00:50] 	Iter 80000 Done. | loss: 1.3123 | lr: 0.010000
+[05.15.22|02:01:16] 	Iter 80100 Done. | loss: 1.6636 | lr: 0.010000
+[05.15.22|02:01:41] 	Iter 80200 Done. | loss: 1.8777 | lr: 0.010000
+[05.15.22|02:01:56] 	train_mean_loss: 1.6915621124968236
+[05.15.22|02:01:56] Training epoch: 274
+[05.15.22|02:02:06] 	Iter 80300 Done. | loss: 1.4252 | lr: 0.010000
+[05.15.22|02:02:31] 	Iter 80400 Done. | loss: 1.6701 | lr: 0.010000
+[05.15.22|02:02:56] 	Iter 80500 Done. | loss: 1.9187 | lr: 0.010000
+[05.15.22|02:03:10] 	train_mean_loss: 1.6887462706792922
+[05.15.22|02:03:10] Training epoch: 275
+[05.15.22|02:03:22] 	Iter 80600 Done. | loss: 1.4089 | lr: 0.010000
+[05.15.22|02:03:47] 	Iter 80700 Done. | loss: 1.7201 | lr: 0.010000
+[05.15.22|02:04:12] 	Iter 80800 Done. | loss: 1.9138 | lr: 0.010000
+[05.15.22|02:04:24] 	train_mean_loss: 1.687341728988959
+[05.15.22|02:04:24] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch275_model.pt.
+[05.15.22|02:04:24] Training epoch: 276
+[05.15.22|02:04:37] 	Iter 80900 Done. | loss: 1.4211 | lr: 0.010000
+[05.15.22|02:05:02] 	Iter 81000 Done. | loss: 1.7500 | lr: 0.010000
+[05.15.22|02:05:27] 	Iter 81100 Done. | loss: 1.9965 | lr: 0.010000
+[05.15.22|02:05:38] 	train_mean_loss: 1.6850059235177073
+[05.15.22|02:05:38] Training epoch: 277
+[05.15.22|02:05:53] 	Iter 81200 Done. | loss: 1.3925 | lr: 0.010000
+[05.15.22|02:06:17] 	Iter 81300 Done. | loss: 1.8205 | lr: 0.010000
+[05.15.22|02:06:43] 	Iter 81400 Done. | loss: 1.9264 | lr: 0.010000
+[05.15.22|02:06:52] 	train_mean_loss: 1.6825078770416935
+[05.15.22|02:06:52] Training epoch: 278
+[05.15.22|02:07:08] 	Iter 81500 Done. | loss: 1.4871 | lr: 0.010000
+[05.15.22|02:07:33] 	Iter 81600 Done. | loss: 1.7493 | lr: 0.010000
+[05.15.22|02:07:58] 	Iter 81700 Done. | loss: 1.9277 | lr: 0.010000
+[05.15.22|02:08:06] 	train_mean_loss: 1.6816052741744891
+[05.15.22|02:08:06] Training epoch: 279
+[05.15.22|02:08:24] 	Iter 81800 Done. | loss: 1.4592 | lr: 0.010000
+[05.15.22|02:08:49] 	Iter 81900 Done. | loss: 1.7533 | lr: 0.010000
+[05.15.22|02:09:14] 	Iter 82000 Done. | loss: 1.9727 | lr: 0.010000
+[05.15.22|02:09:20] 	train_mean_loss: 1.6812820771113546
+[05.15.22|02:09:20] Training epoch: 280
+[05.15.22|02:09:39] 	Iter 82100 Done. | loss: 1.4297 | lr: 0.010000
+[05.15.22|02:10:04] 	Iter 82200 Done. | loss: 1.7299 | lr: 0.010000
+[05.15.22|02:10:29] 	Iter 82300 Done. | loss: 2.0251 | lr: 0.010000
+[05.15.22|02:10:34] 	train_mean_loss: 1.6779055692711655
+[05.15.22|02:10:34] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch280_model.pt.
+[05.15.22|02:10:34] Training epoch: 281
+[05.15.22|02:10:55] 	Iter 82400 Done. | loss: 1.5612 | lr: 0.010000
+[05.15.22|02:11:20] 	Iter 82500 Done. | loss: 1.8727 | lr: 0.010000
+[05.15.22|02:11:45] 	Iter 82600 Done. | loss: 1.9706 | lr: 0.010000
+[05.15.22|02:11:48] 	train_mean_loss: 1.681923246708046
+[05.15.22|02:11:48] Training epoch: 282
+[05.15.22|02:12:10] 	Iter 82700 Done. | loss: 1.4659 | lr: 0.010000
+[05.15.22|02:12:35] 	Iter 82800 Done. | loss: 1.8015 | lr: 0.010000
+[05.15.22|02:13:01] 	Iter 82900 Done. | loss: 2.0100 | lr: 0.010000
+[05.15.22|02:13:02] 	train_mean_loss: 1.6777445446877253
+[05.15.22|02:13:02] Training epoch: 283
+[05.15.22|02:13:26] 	Iter 83000 Done. | loss: 1.4565 | lr: 0.010000
+[05.15.22|02:13:51] 	Iter 83100 Done. | loss: 1.8219 | lr: 0.010000
+[05.15.22|02:14:16] 	Iter 83200 Done. | loss: 1.9975 | lr: 0.010000
+[05.15.22|02:14:16] 	train_mean_loss: 1.6763062168951748
+[05.15.22|02:14:16] Training epoch: 284
+[05.15.22|02:14:41] 	Iter 83300 Done. | loss: 1.6310 | lr: 0.010000
+[05.15.22|02:15:06] 	Iter 83400 Done. | loss: 1.7950 | lr: 0.010000
+[05.15.22|02:15:30] 	train_mean_loss: 1.6774911588552046
+[05.15.22|02:15:30] Training epoch: 285
+[05.15.22|02:15:32] 	Iter 83500 Done. | loss: 1.2814 | lr: 0.010000
+[05.15.22|02:15:57] 	Iter 83600 Done. | loss: 1.5600 | lr: 0.010000
+[05.15.22|02:16:22] 	Iter 83700 Done. | loss: 1.8657 | lr: 0.010000
+[05.15.22|02:16:44] 	train_mean_loss: 1.6743749667998074
+[05.15.22|02:16:44] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch285_model.pt.
+[05.15.22|02:16:44] Training epoch: 286
+[05.15.22|02:16:47] 	Iter 83800 Done. | loss: 1.2545 | lr: 0.010000
+[05.15.22|02:17:12] 	Iter 83900 Done. | loss: 1.4877 | lr: 0.010000
+[05.15.22|02:17:37] 	Iter 84000 Done. | loss: 1.8553 | lr: 0.010000
+[05.15.22|02:17:57] 	train_mean_loss: 1.6722544447905352
+[05.15.22|02:17:57] Training epoch: 287
+[05.15.22|02:18:02] 	Iter 84100 Done. | loss: 1.2342 | lr: 0.010000
+[05.15.22|02:18:27] 	Iter 84200 Done. | loss: 1.6423 | lr: 0.010000
+[05.15.22|02:18:52] 	Iter 84300 Done. | loss: 1.8403 | lr: 0.010000
+[05.15.22|02:19:11] 	train_mean_loss: 1.672995313495195
+[05.15.22|02:19:11] Training epoch: 288
+[05.15.22|02:19:17] 	Iter 84400 Done. | loss: 1.4318 | lr: 0.010000
+[05.15.22|02:19:42] 	Iter 84500 Done. | loss: 1.5946 | lr: 0.010000
+[05.15.22|02:20:07] 	Iter 84600 Done. | loss: 1.8287 | lr: 0.010000
+[05.15.22|02:20:24] 	train_mean_loss: 1.6746935763326631
+[05.15.22|02:20:24] Training epoch: 289
+[05.15.22|02:20:32] 	Iter 84700 Done. | loss: 1.3188 | lr: 0.010000
+[05.15.22|02:20:57] 	Iter 84800 Done. | loss: 1.6541 | lr: 0.010000
+[05.15.22|02:21:22] 	Iter 84900 Done. | loss: 1.8960 | lr: 0.010000
+[05.15.22|02:21:39] 	train_mean_loss: 1.6756133238474529
+[05.15.22|02:21:39] Training epoch: 290
+[05.15.22|02:21:48] 	Iter 85000 Done. | loss: 1.2634 | lr: 0.010000
+[05.15.22|02:22:13] 	Iter 85100 Done. | loss: 1.6520 | lr: 0.010000
+[05.15.22|02:22:38] 	Iter 85200 Done. | loss: 1.8839 | lr: 0.010000
+[05.15.22|02:22:53] 	train_mean_loss: 1.6712254780490383
+[05.15.22|02:22:53] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch290_model.pt.
+[05.15.22|02:22:53] Training epoch: 291
+[05.15.22|02:23:03] 	Iter 85300 Done. | loss: 1.4087 | lr: 0.010000
+[05.15.22|02:23:29] 	Iter 85400 Done. | loss: 1.7314 | lr: 0.010000
+[05.15.22|02:23:54] 	Iter 85500 Done. | loss: 1.9725 | lr: 0.010000
+[05.15.22|02:24:07] 	train_mean_loss: 1.6703174600795823
+[05.15.22|02:24:07] Training epoch: 292
+[05.15.22|02:24:19] 	Iter 85600 Done. | loss: 1.4020 | lr: 0.010000
+[05.15.22|02:24:44] 	Iter 85700 Done. | loss: 1.6995 | lr: 0.010000
+[05.15.22|02:25:09] 	Iter 85800 Done. | loss: 1.9270 | lr: 0.010000
+[05.15.22|02:25:21] 	train_mean_loss: 1.6707161794714376
+[05.15.22|02:25:21] Training epoch: 293
+[05.15.22|02:25:35] 	Iter 85900 Done. | loss: 1.3259 | lr: 0.010000
+[05.15.22|02:26:00] 	Iter 86000 Done. | loss: 1.7461 | lr: 0.010000
+[05.15.22|02:26:25] 	Iter 86100 Done. | loss: 1.9694 | lr: 0.010000
+[05.15.22|02:26:35] 	train_mean_loss: 1.6649404070815261
+[05.15.22|02:26:35] Training epoch: 294
+[05.15.22|02:26:51] 	Iter 86200 Done. | loss: 1.5223 | lr: 0.010000
+[05.15.22|02:27:16] 	Iter 86300 Done. | loss: 1.7646 | lr: 0.010000
+[05.15.22|02:27:41] 	Iter 86400 Done. | loss: 1.9221 | lr: 0.010000
+[05.15.22|02:27:50] 	train_mean_loss: 1.6666115335866707
+[05.15.22|02:27:50] Training epoch: 295
+[05.15.22|02:28:07] 	Iter 86500 Done. | loss: 1.4335 | lr: 0.010000
+[05.15.22|02:28:32] 	Iter 86600 Done. | loss: 1.7728 | lr: 0.010000
+[05.15.22|02:28:57] 	Iter 86700 Done. | loss: 1.9824 | lr: 0.010000
+[05.15.22|02:29:04] 	train_mean_loss: 1.6664454272004212
+[05.15.22|02:29:04] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch295_model.pt.
+[05.15.22|02:29:04] Training epoch: 296
+[05.15.22|02:29:22] 	Iter 86800 Done. | loss: 1.4157 | lr: 0.010000
+[05.15.22|02:29:47] 	Iter 86900 Done. | loss: 1.7481 | lr: 0.010000
+[05.15.22|02:30:12] 	Iter 87000 Done. | loss: 1.9158 | lr: 0.010000
+[05.15.22|02:30:18] 	train_mean_loss: 1.6666147270981146
+[05.15.22|02:30:18] Training epoch: 297
+[05.15.22|02:30:37] 	Iter 87100 Done. | loss: 1.5197 | lr: 0.010000
+[05.15.22|02:31:02] 	Iter 87200 Done. | loss: 1.7093 | lr: 0.010000
+[05.15.22|02:31:28] 	Iter 87300 Done. | loss: 1.9774 | lr: 0.010000
+[05.15.22|02:31:32] 	train_mean_loss: 1.66584570553838
+[05.15.22|02:31:32] Training epoch: 298
+[05.15.22|02:31:53] 	Iter 87400 Done. | loss: 1.5209 | lr: 0.010000
+[05.15.22|02:32:18] 	Iter 87500 Done. | loss: 1.7448 | lr: 0.010000
+[05.15.22|02:32:44] 	Iter 87600 Done. | loss: 1.9563 | lr: 0.010000
+[05.15.22|02:32:46] 	train_mean_loss: 1.66887774718862
+[05.15.22|02:32:46] Training epoch: 299
+[05.15.22|02:33:09] 	Iter 87700 Done. | loss: 1.4746 | lr: 0.010000
+[05.15.22|02:33:34] 	Iter 87800 Done. | loss: 1.7315 | lr: 0.010000
+[05.15.22|02:33:59] 	Iter 87900 Done. | loss: 1.9020 | lr: 0.010000
+[05.15.22|02:34:00] 	train_mean_loss: 1.665315290292104
+[05.15.22|02:34:00] Training epoch: 300
+[05.15.22|02:34:24] 	Iter 88000 Done. | loss: 1.5385 | lr: 0.010000
+[05.15.22|02:34:49] 	Iter 88100 Done. | loss: 1.8470 | lr: 0.010000
+[05.15.22|02:35:14] 	train_mean_loss: 1.6629648070757082
+[05.15.22|02:35:14] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch300_model.pt.
+[05.15.22|02:35:14] Training epoch: 301
+[05.15.22|02:35:15] 	Iter 88200 Done. | loss: 1.2206 | lr: 0.010000
+[05.15.22|02:35:40] 	Iter 88300 Done. | loss: 1.4812 | lr: 0.010000
+[05.15.22|02:36:05] 	Iter 88400 Done. | loss: 1.8336 | lr: 0.010000
+[05.15.22|02:36:28] 	train_mean_loss: 1.664343964891369
+[05.15.22|02:36:28] Training epoch: 302
+[05.15.22|02:36:30] 	Iter 88500 Done. | loss: 1.2680 | lr: 0.010000
+[05.15.22|02:36:55] 	Iter 88600 Done. | loss: 1.6155 | lr: 0.010000
+[05.15.22|02:37:20] 	Iter 88700 Done. | loss: 1.8105 | lr: 0.010000
+[05.15.22|02:37:42] 	train_mean_loss: 1.6614772194907779
+[05.15.22|02:37:42] Training epoch: 303
+[05.15.22|02:37:46] 	Iter 88800 Done. | loss: 1.3294 | lr: 0.010000
+[05.15.22|02:38:11] 	Iter 88900 Done. | loss: 1.5516 | lr: 0.010000
+[05.15.22|02:38:35] 	Iter 89000 Done. | loss: 1.8834 | lr: 0.010000
+[05.15.22|02:38:56] 	train_mean_loss: 1.6663240186211203
+[05.15.22|02:38:56] Training epoch: 304
+[05.15.22|02:39:01] 	Iter 89100 Done. | loss: 1.3162 | lr: 0.010000
+[05.15.22|02:39:26] 	Iter 89200 Done. | loss: 1.5881 | lr: 0.010000
+[05.15.22|02:39:51] 	Iter 89300 Done. | loss: 1.9299 | lr: 0.010000
+[05.15.22|02:40:10] 	train_mean_loss: 1.6592776459090564
+[05.15.22|02:40:10] Training epoch: 305
+[05.15.22|02:40:16] 	Iter 89400 Done. | loss: 1.3081 | lr: 0.010000
+[05.15.22|02:40:41] 	Iter 89500 Done. | loss: 1.5477 | lr: 0.010000
+[05.15.22|02:41:06] 	Iter 89600 Done. | loss: 1.8918 | lr: 0.010000
+[05.15.22|02:41:23] 	train_mean_loss: 1.6601852251558888
+[05.15.22|02:41:24] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch305_model.pt.
+[05.15.22|02:41:24] Training epoch: 306
+[05.15.22|02:41:32] 	Iter 89700 Done. | loss: 1.3936 | lr: 0.010000
+[05.15.22|02:41:56] 	Iter 89800 Done. | loss: 1.6576 | lr: 0.010000
+[05.15.22|02:42:21] 	Iter 89900 Done. | loss: 1.8763 | lr: 0.010000
+[05.15.22|02:42:37] 	train_mean_loss: 1.662620091924862
+[05.15.22|02:42:37] Training epoch: 307
+[05.15.22|02:42:47] 	Iter 90000 Done. | loss: 1.3531 | lr: 0.010000
+[05.15.22|02:43:12] 	Iter 90100 Done. | loss: 1.6258 | lr: 0.010000
+[05.15.22|02:43:37] 	Iter 90200 Done. | loss: 1.9435 | lr: 0.010000
+[05.15.22|02:43:51] 	train_mean_loss: 1.6605607794255626
+[05.15.22|02:43:51] Training epoch: 308
+[05.15.22|02:44:02] 	Iter 90300 Done. | loss: 1.3797 | lr: 0.010000
+[05.15.22|02:44:27] 	Iter 90400 Done. | loss: 1.6315 | lr: 0.010000
+[05.15.22|02:44:52] 	Iter 90500 Done. | loss: 1.8375 | lr: 0.010000
+[05.15.22|02:45:05] 	train_mean_loss: 1.658394918555305
+[05.15.22|02:45:05] Training epoch: 309
+[05.15.22|02:45:17] 	Iter 90600 Done. | loss: 1.4050 | lr: 0.010000
+[05.15.22|02:45:42] 	Iter 90700 Done. | loss: 1.6871 | lr: 0.010000
+[05.15.22|02:46:07] 	Iter 90800 Done. | loss: 1.9285 | lr: 0.010000
+[05.15.22|02:46:18] 	train_mean_loss: 1.6599040108473122
+[05.15.22|02:46:18] Training epoch: 310
+[05.15.22|02:46:32] 	Iter 90900 Done. | loss: 1.3798 | lr: 0.010000
+[05.15.22|02:46:58] 	Iter 91000 Done. | loss: 1.8141 | lr: 0.010000
+[05.15.22|02:47:23] 	Iter 91100 Done. | loss: 2.0370 | lr: 0.010000
+[05.15.22|02:47:33] 	train_mean_loss: 1.660309776156938
+[05.15.22|02:47:33] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch310_model.pt.
+[05.15.22|02:47:33] Training epoch: 311
+[05.15.22|02:47:48] 	Iter 91200 Done. | loss: 1.3447 | lr: 0.010000
+[05.15.22|02:48:13] 	Iter 91300 Done. | loss: 1.7284 | lr: 0.010000
+[05.15.22|02:48:39] 	Iter 91400 Done. | loss: 1.9311 | lr: 0.010000
+[05.15.22|02:48:47] 	train_mean_loss: 1.656384594180957
+[05.15.22|02:48:47] Training epoch: 312
+[05.15.22|02:49:04] 	Iter 91500 Done. | loss: 1.3963 | lr: 0.010000
+[05.15.22|02:49:29] 	Iter 91600 Done. | loss: 1.7015 | lr: 0.010000
+[05.15.22|02:49:54] 	Iter 91700 Done. | loss: 1.9044 | lr: 0.010000
+[05.15.22|02:50:01] 	train_mean_loss: 1.657125887416658
+[05.15.22|02:50:01] Training epoch: 313
+[05.15.22|02:50:19] 	Iter 91800 Done. | loss: 1.5173 | lr: 0.010000
+[05.15.22|02:50:45] 	Iter 91900 Done. | loss: 1.6525 | lr: 0.010000
+[05.15.22|02:51:10] 	Iter 92000 Done. | loss: 1.9298 | lr: 0.010000
+[05.15.22|02:51:15] 	train_mean_loss: 1.65381670646927
+[05.15.22|02:51:15] Training epoch: 314
+[05.15.22|02:51:35] 	Iter 92100 Done. | loss: 1.4820 | lr: 0.010000
+[05.15.22|02:52:00] 	Iter 92200 Done. | loss: 1.9198 | lr: 0.010000
+[05.15.22|02:52:25] 	Iter 92300 Done. | loss: 1.9208 | lr: 0.010000
+[05.15.22|02:52:29] 	train_mean_loss: 1.6563641327579006
+[05.15.22|02:52:29] Training epoch: 315
+[05.15.22|02:52:51] 	Iter 92400 Done. | loss: 1.5315 | lr: 0.010000
+[05.15.22|02:53:16] 	Iter 92500 Done. | loss: 1.7260 | lr: 0.010000
+[05.15.22|02:53:41] 	Iter 92600 Done. | loss: 1.9954 | lr: 0.010000
+[05.15.22|02:53:44] 	train_mean_loss: 1.6576103227479118
+[05.15.22|02:53:44] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch315_model.pt.
+[05.15.22|02:53:44] Training epoch: 316
+[05.15.22|02:54:07] 	Iter 92700 Done. | loss: 1.4631 | lr: 0.010000
+[05.15.22|02:54:32] 	Iter 92800 Done. | loss: 1.8427 | lr: 0.010000
+[05.15.22|02:54:57] 	Iter 92900 Done. | loss: 1.9395 | lr: 0.010000
+[05.15.22|02:54:58] 	train_mean_loss: 1.655914641967436
+[05.15.22|02:54:58] Training epoch: 317
+[05.15.22|02:55:22] 	Iter 93000 Done. | loss: 1.5339 | lr: 0.010000
+[05.15.22|02:55:47] 	Iter 93100 Done. | loss: 1.8624 | lr: 0.010000
+[05.15.22|02:56:12] 	train_mean_loss: 1.6563049242610024
+[05.15.22|02:56:12] Training epoch: 318
+[05.15.22|02:56:13] 	Iter 93200 Done. | loss: 1.2465 | lr: 0.010000
+[05.15.22|02:56:38] 	Iter 93300 Done. | loss: 1.5384 | lr: 0.010000
+[05.15.22|02:57:03] 	Iter 93400 Done. | loss: 1.8481 | lr: 0.010000
+[05.15.22|02:57:26] 	train_mean_loss: 1.6532653322836168
+[05.15.22|02:57:26] Training epoch: 319
+[05.15.22|02:57:29] 	Iter 93500 Done. | loss: 1.3065 | lr: 0.010000
+[05.15.22|02:57:54] 	Iter 93600 Done. | loss: 1.5734 | lr: 0.010000
+[05.15.22|02:58:19] 	Iter 93700 Done. | loss: 1.8383 | lr: 0.010000
+[05.15.22|02:58:40] 	train_mean_loss: 1.652954937649422
+[05.15.22|02:58:40] Training epoch: 320
+[05.15.22|02:58:44] 	Iter 93800 Done. | loss: 1.2594 | lr: 0.010000
+[05.15.22|02:59:10] 	Iter 93900 Done. | loss: 1.5434 | lr: 0.010000
+[05.15.22|02:59:34] 	Iter 94000 Done. | loss: 1.7789 | lr: 0.010000
+[05.15.22|02:59:54] 	train_mean_loss: 1.6548621163887232
+[05.15.22|02:59:54] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch320_model.pt.
+[05.15.22|02:59:54] Training epoch: 321
+[05.15.22|03:00:00] 	Iter 94100 Done. | loss: 1.3622 | lr: 0.010000
+[05.15.22|03:00:25] 	Iter 94200 Done. | loss: 1.5767 | lr: 0.010000
+[05.15.22|03:00:50] 	Iter 94300 Done. | loss: 1.8878 | lr: 0.010000
+[05.15.22|03:01:09] 	train_mean_loss: 1.6542225630104948
+[05.15.22|03:01:09] Training epoch: 322
+[05.15.22|03:01:16] 	Iter 94400 Done. | loss: 1.2980 | lr: 0.010000
+[05.15.22|03:01:41] 	Iter 94500 Done. | loss: 1.5363 | lr: 0.010000
+[05.15.22|03:02:05] 	Iter 94600 Done. | loss: 1.8190 | lr: 0.010000
+[05.15.22|03:02:22] 	train_mean_loss: 1.6517046746753512
+[05.15.22|03:02:22] Training epoch: 323
+[05.15.22|03:02:31] 	Iter 94700 Done. | loss: 1.3631 | lr: 0.010000
+[05.15.22|03:02:56] 	Iter 94800 Done. | loss: 1.6709 | lr: 0.010000
+[05.15.22|03:03:20] 	Iter 94900 Done. | loss: 1.8870 | lr: 0.010000
+[05.15.22|03:03:36] 	train_mean_loss: 1.6521057725763646
+[05.15.22|03:03:36] Training epoch: 324
+[05.15.22|03:03:46] 	Iter 95000 Done. | loss: 1.4073 | lr: 0.010000
+[05.15.22|03:04:10] 	Iter 95100 Done. | loss: 1.6443 | lr: 0.010000
+[05.15.22|03:04:36] 	Iter 95200 Done. | loss: 1.9833 | lr: 0.010000
+[05.15.22|03:04:49] 	train_mean_loss: 1.6501303497625857
+[05.15.22|03:04:49] Training epoch: 325
+[05.15.22|03:05:01] 	Iter 95300 Done. | loss: 1.3499 | lr: 0.010000
+[05.15.22|03:05:26] 	Iter 95400 Done. | loss: 1.6780 | lr: 0.010000
+[05.15.22|03:05:51] 	Iter 95500 Done. | loss: 1.8897 | lr: 0.010000
+[05.15.22|03:06:04] 	train_mean_loss: 1.652110902630553
+[05.15.22|03:06:04] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch325_model.pt.
+[05.15.22|03:06:04] Training epoch: 326
+[05.15.22|03:06:17] 	Iter 95600 Done. | loss: 1.4201 | lr: 0.010000
+[05.15.22|03:06:41] 	Iter 95700 Done. | loss: 1.6868 | lr: 0.010000
+[05.15.22|03:07:07] 	Iter 95800 Done. | loss: 2.0087 | lr: 0.010000
+[05.15.22|03:07:17] 	train_mean_loss: 1.6496274118520775
+[05.15.22|03:07:17] Training epoch: 327
+[05.15.22|03:07:32] 	Iter 95900 Done. | loss: 1.3524 | lr: 0.010000
+[05.15.22|03:07:57] 	Iter 96000 Done. | loss: 1.7073 | lr: 0.010000
+[05.15.22|03:08:22] 	Iter 96100 Done. | loss: 1.9847 | lr: 0.010000
+[05.15.22|03:08:31] 	train_mean_loss: 1.6506503690667704
+[05.15.22|03:08:31] Training epoch: 328
+[05.15.22|03:08:48] 	Iter 96200 Done. | loss: 1.4685 | lr: 0.010000
+[05.15.22|03:09:12] 	Iter 96300 Done. | loss: 1.6991 | lr: 0.010000
+[05.15.22|03:09:38] 	Iter 96400 Done. | loss: 1.9352 | lr: 0.010000
+[05.15.22|03:09:45] 	train_mean_loss: 1.6499297740508099
+[05.15.22|03:09:45] Training epoch: 329
+[05.15.22|03:10:03] 	Iter 96500 Done. | loss: 1.4194 | lr: 0.010000
+[05.15.22|03:10:28] 	Iter 96600 Done. | loss: 1.7536 | lr: 0.010000
+[05.15.22|03:10:53] 	Iter 96700 Done. | loss: 1.9455 | lr: 0.010000
+[05.15.22|03:10:59] 	train_mean_loss: 1.6509485309626781
+[05.15.22|03:10:59] Training epoch: 330
+[05.15.22|03:11:19] 	Iter 96800 Done. | loss: 1.3894 | lr: 0.010000
+[05.15.22|03:11:44] 	Iter 96900 Done. | loss: 1.7878 | lr: 0.010000
+[05.15.22|03:12:08] 	Iter 97000 Done. | loss: 1.9492 | lr: 0.010000
+[05.15.22|03:12:13] 	train_mean_loss: 1.6516120640598997
+[05.15.22|03:12:13] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch330_model.pt.
+[05.15.22|03:12:13] Training epoch: 331
+[05.15.22|03:12:34] 	Iter 97100 Done. | loss: 1.4147 | lr: 0.010000
+[05.15.22|03:12:59] 	Iter 97200 Done. | loss: 1.7256 | lr: 0.010000
+[05.15.22|03:13:24] 	Iter 97300 Done. | loss: 1.9351 | lr: 0.010000
+[05.15.22|03:13:28] 	train_mean_loss: 1.6486943838547687
+[05.15.22|03:13:28] Training epoch: 332
+[05.15.22|03:13:50] 	Iter 97400 Done. | loss: 1.4520 | lr: 0.010000
+[05.15.22|03:14:15] 	Iter 97500 Done. | loss: 1.8324 | lr: 0.010000
+[05.15.22|03:14:40] 	Iter 97600 Done. | loss: 1.9754 | lr: 0.010000
+[05.15.22|03:14:42] 	train_mean_loss: 1.649204745179131
+[05.15.22|03:14:42] Training epoch: 333
+[05.15.22|03:15:05] 	Iter 97700 Done. | loss: 1.4606 | lr: 0.010000
+[05.15.22|03:15:30] 	Iter 97800 Done. | loss: 1.7847 | lr: 0.010000
+[05.15.22|03:15:55] 	Iter 97900 Done. | loss: 1.9773 | lr: 0.010000
+[05.15.22|03:15:55] 	train_mean_loss: 1.6490437635759108
+[05.15.22|03:15:55] Training epoch: 334
+[05.15.22|03:16:21] 	Iter 98000 Done. | loss: 1.5779 | lr: 0.010000
+[05.15.22|03:16:46] 	Iter 98100 Done. | loss: 1.8661 | lr: 0.010000
+[05.15.22|03:17:10] 	train_mean_loss: 1.6523313473682015
+[05.15.22|03:17:10] Training epoch: 335
+[05.15.22|03:17:11] 	Iter 98200 Done. | loss: 1.2623 | lr: 0.010000
+[05.15.22|03:17:36] 	Iter 98300 Done. | loss: 1.4777 | lr: 0.010000
+[05.15.22|03:18:01] 	Iter 98400 Done. | loss: 1.8138 | lr: 0.010000
+[05.15.22|03:18:23] 	train_mean_loss: 1.648732862504972
+[05.15.22|03:18:23] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch335_model.pt.
+[05.15.22|03:18:23] Training epoch: 336
+[05.15.22|03:18:26] 	Iter 98500 Done. | loss: 1.2955 | lr: 0.010000
+[05.15.22|03:18:51] 	Iter 98600 Done. | loss: 1.4906 | lr: 0.010000
+[05.15.22|03:19:16] 	Iter 98700 Done. | loss: 1.8588 | lr: 0.010000
+[05.15.22|03:19:37] 	train_mean_loss: 1.64625545423858
+[05.15.22|03:19:37] Training epoch: 337
+[05.15.22|03:19:42] 	Iter 98800 Done. | loss: 1.2687 | lr: 0.010000
+[05.15.22|03:20:07] 	Iter 98900 Done. | loss: 1.5596 | lr: 0.010000
+[05.15.22|03:20:31] 	Iter 99000 Done. | loss: 1.7987 | lr: 0.010000
+[05.15.22|03:20:51] 	train_mean_loss: 1.644764432696258
+[05.15.22|03:20:51] Training epoch: 338
+[05.15.22|03:20:57] 	Iter 99100 Done. | loss: 1.3227 | lr: 0.010000
+[05.15.22|03:21:22] 	Iter 99200 Done. | loss: 1.6466 | lr: 0.010000
+[05.15.22|03:21:47] 	Iter 99300 Done. | loss: 1.8157 | lr: 0.010000
+[05.15.22|03:22:05] 	train_mean_loss: 1.6489073796337153
+[05.15.22|03:22:05] Training epoch: 339
+[05.15.22|03:22:13] 	Iter 99400 Done. | loss: 1.2736 | lr: 0.010000
+[05.15.22|03:22:37] 	Iter 99500 Done. | loss: 1.6372 | lr: 0.010000
+[05.15.22|03:23:02] 	Iter 99600 Done. | loss: 1.9955 | lr: 0.010000
+[05.15.22|03:23:19] 	train_mean_loss: 1.6467842982739818
+[05.15.22|03:23:19] Training epoch: 340
+[05.15.22|03:23:28] 	Iter 99700 Done. | loss: 1.3474 | lr: 0.010000
+[05.15.22|03:23:53] 	Iter 99800 Done. | loss: 1.5692 | lr: 0.010000
+[05.15.22|03:24:18] 	Iter 99900 Done. | loss: 1.8643 | lr: 0.010000
+[05.15.22|03:24:33] 	train_mean_loss: 1.6472734504816484
+[05.15.22|03:24:33] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch340_model.pt.
+[05.15.22|03:24:33] Training epoch: 341
+[05.15.22|03:24:43] 	Iter 100000 Done. | loss: 1.2799 | lr: 0.010000
+[05.15.22|03:25:08] 	Iter 100100 Done. | loss: 1.5868 | lr: 0.010000
+[05.15.22|03:25:34] 	Iter 100200 Done. | loss: 1.9940 | lr: 0.010000
+[05.15.22|03:25:47] 	train_mean_loss: 1.6421458331906065
+[05.15.22|03:25:47] Training epoch: 342
+[05.15.22|03:25:59] 	Iter 100300 Done. | loss: 1.3754 | lr: 0.010000
+[05.15.22|03:26:24] 	Iter 100400 Done. | loss: 1.6748 | lr: 0.010000
+[05.15.22|03:26:49] 	Iter 100500 Done. | loss: 1.9250 | lr: 0.010000
+[05.15.22|03:27:01] 	train_mean_loss: 1.6469863722113525
+[05.15.22|03:27:01] Training epoch: 343
+[05.15.22|03:27:15] 	Iter 100600 Done. | loss: 1.3691 | lr: 0.010000
+[05.15.22|03:27:39] 	Iter 100700 Done. | loss: 1.6743 | lr: 0.010000
+[05.15.22|03:28:05] 	Iter 100800 Done. | loss: 1.9618 | lr: 0.010000
+[05.15.22|03:28:15] 	train_mean_loss: 1.643363241841193
+[05.15.22|03:28:15] Training epoch: 344
+[05.15.22|03:28:30] 	Iter 100900 Done. | loss: 1.3669 | lr: 0.010000
+[05.15.22|03:28:56] 	Iter 101000 Done. | loss: 1.7322 | lr: 0.010000
+[05.15.22|03:29:21] 	Iter 101100 Done. | loss: 1.8870 | lr: 0.010000
+[05.15.22|03:29:30] 	train_mean_loss: 1.6460749957026268
+[05.15.22|03:29:30] Training epoch: 345
+[05.15.22|03:29:46] 	Iter 101200 Done. | loss: 1.3452 | lr: 0.010000
+[05.15.22|03:30:11] 	Iter 101300 Done. | loss: 1.7087 | lr: 0.010000
+[05.15.22|03:30:37] 	Iter 101400 Done. | loss: 1.9485 | lr: 0.010000
+[05.15.22|03:30:44] 	train_mean_loss: 1.6460507183658832
+[05.15.22|03:30:44] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch345_model.pt.
+[05.15.22|03:30:44] Training epoch: 346
+[05.15.22|03:31:02] 	Iter 101500 Done. | loss: 1.4254 | lr: 0.010000
+[05.15.22|03:31:27] 	Iter 101600 Done. | loss: 1.7175 | lr: 0.010000
+[05.15.22|03:31:52] 	Iter 101700 Done. | loss: 1.9667 | lr: 0.010000
+[05.15.22|03:31:58] 	train_mean_loss: 1.6454714183904686
+[05.15.22|03:31:58] Training epoch: 347
+[05.15.22|03:32:17] 	Iter 101800 Done. | loss: 1.4577 | lr: 0.010000
+[05.15.22|03:32:42] 	Iter 101900 Done. | loss: 1.7600 | lr: 0.010000
+[05.15.22|03:33:08] 	Iter 102000 Done. | loss: 1.9047 | lr: 0.010000
+[05.15.22|03:33:12] 	train_mean_loss: 1.643926285562061
+[05.15.22|03:33:12] Training epoch: 348
+[05.15.22|03:33:33] 	Iter 102100 Done. | loss: 1.3369 | lr: 0.010000
+[05.15.22|03:33:58] 	Iter 102200 Done. | loss: 1.7330 | lr: 0.010000
+[05.15.22|03:34:23] 	Iter 102300 Done. | loss: 1.8602 | lr: 0.010000
+[05.15.22|03:34:26] 	train_mean_loss: 1.6407741077092228
+[05.15.22|03:34:26] Training epoch: 349
+[05.15.22|03:34:49] 	Iter 102400 Done. | loss: 1.5663 | lr: 0.010000
+[05.15.22|03:35:14] 	Iter 102500 Done. | loss: 1.8072 | lr: 0.010000
+[05.15.22|03:35:39] 	Iter 102600 Done. | loss: 1.9905 | lr: 0.010000
+[05.15.22|03:35:40] 	train_mean_loss: 1.642274382568541
+[05.15.22|03:35:40] Training epoch: 350
+[05.15.22|03:36:04] 	Iter 102700 Done. | loss: 1.4599 | lr: 0.010000
+[05.15.22|03:36:29] 	Iter 102800 Done. | loss: 1.7045 | lr: 0.010000
+[05.15.22|03:36:54] 	train_mean_loss: 1.64349709684346
+[05.15.22|03:36:54] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch350_model.pt.
+[05.15.22|03:36:54] Training epoch: 351
+[05.15.22|03:36:55] 	Iter 102900 Done. | loss: 1.2407 | lr: 0.010000
+[05.15.22|03:37:20] 	Iter 103000 Done. | loss: 1.5175 | lr: 0.010000
+[05.15.22|03:37:45] 	Iter 103100 Done. | loss: 1.8550 | lr: 0.010000
+[05.15.22|03:38:08] 	train_mean_loss: 1.643511820001667
+[05.15.22|03:38:08] Training epoch: 352
+[05.15.22|03:38:10] 	Iter 103200 Done. | loss: 1.2520 | lr: 0.010000
+[05.15.22|03:38:35] 	Iter 103300 Done. | loss: 1.6027 | lr: 0.010000
+[05.15.22|03:39:01] 	Iter 103400 Done. | loss: 1.8084 | lr: 0.010000
+[05.15.22|03:39:23] 	train_mean_loss: 1.642451993056706
+[05.15.22|03:39:23] Training epoch: 353
+[05.15.22|03:39:26] 	Iter 103500 Done. | loss: 1.3020 | lr: 0.010000
+[05.15.22|03:39:52] 	Iter 103600 Done. | loss: 1.5116 | lr: 0.010000
+[05.15.22|03:40:17] 	Iter 103700 Done. | loss: 1.8454 | lr: 0.010000
+[05.15.22|03:40:37] 	train_mean_loss: 1.6447223003218774
+[05.15.22|03:40:37] Training epoch: 354
+[05.15.22|03:40:42] 	Iter 103800 Done. | loss: 1.3125 | lr: 0.010000
+[05.15.22|03:41:07] 	Iter 103900 Done. | loss: 1.5995 | lr: 0.010000
+[05.15.22|03:41:32] 	Iter 104000 Done. | loss: 1.8224 | lr: 0.010000
+[05.15.22|03:41:51] 	train_mean_loss: 1.6450174848238628
+[05.15.22|03:41:51] Training epoch: 355
+[05.15.22|03:41:58] 	Iter 104100 Done. | loss: 1.3619 | lr: 0.010000
+[05.15.22|03:42:23] 	Iter 104200 Done. | loss: 1.5657 | lr: 0.010000
+[05.15.22|03:42:48] 	Iter 104300 Done. | loss: 1.7899 | lr: 0.010000
+[05.15.22|03:43:05] 	train_mean_loss: 1.6402876000015103
+[05.15.22|03:43:05] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch355_model.pt.
+[05.15.22|03:43:05] Training epoch: 356
+[05.15.22|03:43:13] 	Iter 104400 Done. | loss: 1.3643 | lr: 0.010000
+[05.15.22|03:43:38] 	Iter 104500 Done. | loss: 1.5797 | lr: 0.010000
+[05.15.22|03:44:03] 	Iter 104600 Done. | loss: 1.8763 | lr: 0.010000
+[05.15.22|03:44:19] 	train_mean_loss: 1.6417997329413485
+[05.15.22|03:44:19] Training epoch: 357
+[05.15.22|03:44:28] 	Iter 104700 Done. | loss: 1.2967 | lr: 0.010000
+[05.15.22|03:44:53] 	Iter 104800 Done. | loss: 1.7004 | lr: 0.010000
+[05.15.22|03:45:19] 	Iter 104900 Done. | loss: 1.9320 | lr: 0.010000
+[05.15.22|03:45:34] 	train_mean_loss: 1.640440647699395
+[05.15.22|03:45:34] Training epoch: 358
+[05.15.22|03:45:45] 	Iter 105000 Done. | loss: 1.4290 | lr: 0.010000
+[05.15.22|03:46:10] 	Iter 105100 Done. | loss: 1.6288 | lr: 0.010000
+[05.15.22|03:46:35] 	Iter 105200 Done. | loss: 1.8626 | lr: 0.010000
+[05.15.22|03:46:48] 	train_mean_loss: 1.6405452279006543
+[05.15.22|03:46:48] Training epoch: 359
+[05.15.22|03:47:00] 	Iter 105300 Done. | loss: 1.3895 | lr: 0.010000
+[05.15.22|03:47:25] 	Iter 105400 Done. | loss: 1.6804 | lr: 0.010000
+[05.15.22|03:47:50] 	Iter 105500 Done. | loss: 1.9161 | lr: 0.010000
+[05.15.22|03:48:01] 	train_mean_loss: 1.6409230937763137
+[05.15.22|03:48:01] Training epoch: 360
+[05.15.22|03:48:15] 	Iter 105600 Done. | loss: 1.3959 | lr: 0.010000
+[05.15.22|03:48:41] 	Iter 105700 Done. | loss: 1.6986 | lr: 0.010000
+[05.15.22|03:49:06] 	Iter 105800 Done. | loss: 1.9078 | lr: 0.010000
+[05.15.22|03:49:15] 	train_mean_loss: 1.6406735875168625
+[05.15.22|03:49:16] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch360_model.pt.
+[05.15.22|03:49:16] Training epoch: 361
+[05.15.22|03:49:31] 	Iter 105900 Done. | loss: 1.3382 | lr: 0.010000
+[05.15.22|03:49:57] 	Iter 106000 Done. | loss: 1.7654 | lr: 0.010000
+[05.15.22|03:50:22] 	Iter 106100 Done. | loss: 1.8857 | lr: 0.010000
+[05.15.22|03:50:30] 	train_mean_loss: 1.637621249065918
+[05.15.22|03:50:30] Training epoch: 362
+[05.15.22|03:50:47] 	Iter 106200 Done. | loss: 1.4196 | lr: 0.010000
+[05.15.22|03:51:13] 	Iter 106300 Done. | loss: 1.6972 | lr: 0.010000
+[05.15.22|03:51:37] 	Iter 106400 Done. | loss: 1.9787 | lr: 0.010000
+[05.15.22|03:51:44] 	train_mean_loss: 1.642533185530682
+[05.15.22|03:51:44] Training epoch: 363
+[05.15.22|03:52:02] 	Iter 106500 Done. | loss: 1.5376 | lr: 0.010000
+[05.15.22|03:52:27] 	Iter 106600 Done. | loss: 1.7658 | lr: 0.010000
+[05.15.22|03:52:52] 	Iter 106700 Done. | loss: 1.8575 | lr: 0.010000
+[05.15.22|03:52:58] 	train_mean_loss: 1.6369916719644249
+[05.15.22|03:52:58] Training epoch: 364
+[05.15.22|03:53:18] 	Iter 106800 Done. | loss: 1.5100 | lr: 0.010000
+[05.15.22|03:53:42] 	Iter 106900 Done. | loss: 1.7898 | lr: 0.010000
+[05.15.22|03:54:07] 	Iter 107000 Done. | loss: 1.9000 | lr: 0.010000
+[05.15.22|03:54:11] 	train_mean_loss: 1.6448233946651019
+[05.15.22|03:54:11] Training epoch: 365
+[05.15.22|03:54:33] 	Iter 107100 Done. | loss: 1.4534 | lr: 0.010000
+[05.15.22|03:54:58] 	Iter 107200 Done. | loss: 1.8256 | lr: 0.010000
+[05.15.22|03:55:23] 	Iter 107300 Done. | loss: 1.9189 | lr: 0.010000
+[05.15.22|03:55:25] 	train_mean_loss: 1.6418289250257063
+[05.15.22|03:55:25] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch365_model.pt.
+[05.15.22|03:55:25] Training epoch: 366
+[05.15.22|03:55:49] 	Iter 107400 Done. | loss: 1.4740 | lr: 0.010000
+[05.15.22|03:56:14] 	Iter 107500 Done. | loss: 1.7686 | lr: 0.010000
+[05.15.22|03:56:39] 	Iter 107600 Done. | loss: 1.9212 | lr: 0.010000
+[05.15.22|03:56:39] 	train_mean_loss: 1.6385440826416016
+[05.15.22|03:56:39] Training epoch: 367
+[05.15.22|03:57:04] 	Iter 107700 Done. | loss: 1.4177 | lr: 0.010000
+[05.15.22|03:57:29] 	Iter 107800 Done. | loss: 1.9014 | lr: 0.010000
+[05.15.22|03:57:53] 	train_mean_loss: 1.6384878259937778
+[05.15.22|03:57:53] Training epoch: 368
+[05.15.22|03:57:54] 	Iter 107900 Done. | loss: 1.2447 | lr: 0.010000
+[05.15.22|03:58:19] 	Iter 108000 Done. | loss: 1.5545 | lr: 0.010000
+[05.15.22|03:58:45] 	Iter 108100 Done. | loss: 1.8911 | lr: 0.010000
+[05.15.22|03:59:07] 	train_mean_loss: 1.6400829517111486
+[05.15.22|03:59:07] Training epoch: 369
+[05.15.22|03:59:10] 	Iter 108200 Done. | loss: 1.2959 | lr: 0.010000
+[05.15.22|03:59:35] 	Iter 108300 Done. | loss: 1.6594 | lr: 0.010000
+[05.15.22|04:00:00] 	Iter 108400 Done. | loss: 1.8022 | lr: 0.010000
+[05.15.22|04:00:22] 	train_mean_loss: 1.6364759040527603
+[05.15.22|04:00:22] Training epoch: 370
+[05.15.22|04:00:26] 	Iter 108500 Done. | loss: 1.3027 | lr: 0.010000
+[05.15.22|04:00:51] 	Iter 108600 Done. | loss: 1.6043 | lr: 0.010000
+[05.15.22|04:01:16] 	Iter 108700 Done. | loss: 1.7875 | lr: 0.010000
+[05.15.22|04:01:36] 	train_mean_loss: 1.6359913454574793
+[05.15.22|04:01:36] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch370_model.pt.
+[05.15.22|04:01:36] Training epoch: 371
+[05.15.22|04:01:41] 	Iter 108800 Done. | loss: 1.2212 | lr: 0.010000
+[05.15.22|04:02:06] 	Iter 108900 Done. | loss: 1.5755 | lr: 0.010000
+[05.15.22|04:02:32] 	Iter 109000 Done. | loss: 1.7943 | lr: 0.010000
+[05.15.22|04:02:50] 	train_mean_loss: 1.6380804704160106
+[05.15.22|04:02:50] Training epoch: 372
+[05.15.22|04:02:57] 	Iter 109100 Done. | loss: 1.2724 | lr: 0.010000
+[05.15.22|04:03:22] 	Iter 109200 Done. | loss: 1.5969 | lr: 0.010000
+[05.15.22|04:03:47] 	Iter 109300 Done. | loss: 1.8331 | lr: 0.010000
+[05.15.22|04:04:04] 	train_mean_loss: 1.6389254051811841
+[05.15.22|04:04:04] Training epoch: 373
+[05.15.22|04:04:12] 	Iter 109400 Done. | loss: 1.3123 | lr: 0.010000
+[05.15.22|04:04:37] 	Iter 109500 Done. | loss: 1.5298 | lr: 0.010000
+[05.15.22|04:05:02] 	Iter 109600 Done. | loss: 1.8983 | lr: 0.010000
+[05.15.22|04:05:18] 	train_mean_loss: 1.6401812551783868
+[05.15.22|04:05:18] Training epoch: 374
+[05.15.22|04:05:28] 	Iter 109700 Done. | loss: 1.3221 | lr: 0.010000
+[05.15.22|04:05:53] 	Iter 109800 Done. | loss: 1.6419 | lr: 0.010000
+[05.15.22|04:06:18] 	Iter 109900 Done. | loss: 1.9559 | lr: 0.010000
+[05.15.22|04:06:32] 	train_mean_loss: 1.6375996320426058
+[05.15.22|04:06:32] Training epoch: 375
+[05.15.22|04:06:43] 	Iter 110000 Done. | loss: 1.3899 | lr: 0.010000
+[05.15.22|04:07:08] 	Iter 110100 Done. | loss: 1.6843 | lr: 0.010000
+[05.15.22|04:07:33] 	Iter 110200 Done. | loss: 1.8648 | lr: 0.010000
+[05.15.22|04:07:45] 	train_mean_loss: 1.6356772423601476
+[05.15.22|04:07:45] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch375_model.pt.
+[05.15.22|04:07:45] Training epoch: 376
+[05.15.22|04:07:58] 	Iter 110300 Done. | loss: 1.4023 | lr: 0.010000
+[05.15.22|04:08:23] 	Iter 110400 Done. | loss: 1.6445 | lr: 0.010000
+[05.15.22|04:08:49] 	Iter 110500 Done. | loss: 2.0195 | lr: 0.010000
+[05.15.22|04:08:59] 	train_mean_loss: 1.6373418018120487
+[05.15.22|04:08:59] Training epoch: 377
+[05.15.22|04:09:14] 	Iter 110600 Done. | loss: 1.4385 | lr: 0.010000
+[05.15.22|04:09:39] 	Iter 110700 Done. | loss: 1.6910 | lr: 0.010000
+[05.15.22|04:10:04] 	Iter 110800 Done. | loss: 1.9706 | lr: 0.010000
+[05.15.22|04:10:13] 	train_mean_loss: 1.6362999049173732
+[05.15.22|04:10:13] Training epoch: 378
+[05.15.22|04:10:29] 	Iter 110900 Done. | loss: 1.4749 | lr: 0.010000
+[05.15.22|04:10:54] 	Iter 111000 Done. | loss: 1.7386 | lr: 0.010000
+[05.15.22|04:11:19] 	Iter 111100 Done. | loss: 1.9092 | lr: 0.010000
+[05.15.22|04:11:27] 	train_mean_loss: 1.6370863071104296
+[05.15.22|04:11:27] Training epoch: 379
+[05.15.22|04:11:45] 	Iter 111200 Done. | loss: 1.4517 | lr: 0.010000
+[05.15.22|04:12:10] 	Iter 111300 Done. | loss: 1.6753 | lr: 0.010000
+[05.15.22|04:12:35] 	Iter 111400 Done. | loss: 1.9262 | lr: 0.010000
+[05.15.22|04:12:41] 	train_mean_loss: 1.6384042521723274
+[05.15.22|04:12:41] Training epoch: 380
+[05.15.22|04:13:00] 	Iter 111500 Done. | loss: 1.4857 | lr: 0.010000
+[05.15.22|04:13:25] 	Iter 111600 Done. | loss: 1.7561 | lr: 0.010000
+[05.15.22|04:13:50] 	Iter 111700 Done. | loss: 1.9177 | lr: 0.010000
+[05.15.22|04:13:55] 	train_mean_loss: 1.6398659976972203
+[05.15.22|04:13:55] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch380_model.pt.
+[05.15.22|04:13:55] Training epoch: 381
+[05.15.22|04:14:15] 	Iter 111800 Done. | loss: 1.3845 | lr: 0.010000
+[05.15.22|04:14:40] 	Iter 111900 Done. | loss: 1.7667 | lr: 0.010000
+[05.15.22|04:15:05] 	Iter 112000 Done. | loss: 1.9689 | lr: 0.010000
+[05.15.22|04:15:08] 	train_mean_loss: 1.636900396979585
+[05.15.22|04:15:08] Training epoch: 382
+[05.15.22|04:15:30] 	Iter 112100 Done. | loss: 1.4314 | lr: 0.010000
+[05.15.22|04:15:55] 	Iter 112200 Done. | loss: 1.7218 | lr: 0.010000
+[05.15.22|04:16:20] 	Iter 112300 Done. | loss: 1.9217 | lr: 0.010000
+[05.15.22|04:16:22] 	train_mean_loss: 1.6375246558870589
+[05.15.22|04:16:22] Training epoch: 383
+[05.15.22|04:16:45] 	Iter 112400 Done. | loss: 1.4978 | lr: 0.010000
+[05.15.22|04:17:10] 	Iter 112500 Done. | loss: 1.7394 | lr: 0.010000
+[05.15.22|04:17:35] 	Iter 112600 Done. | loss: 1.9211 | lr: 0.010000
+[05.15.22|04:17:36] 	train_mean_loss: 1.6381261523078088
+[05.15.22|04:17:36] Training epoch: 384
+[05.15.22|04:18:01] 	Iter 112700 Done. | loss: 1.4617 | lr: 0.010000
+[05.15.22|04:18:26] 	Iter 112800 Done. | loss: 1.8877 | lr: 0.010000
+[05.15.22|04:18:49] 	train_mean_loss: 1.6341845766216718
+[05.15.22|04:18:49] Training epoch: 385
+[05.15.22|04:18:51] 	Iter 112900 Done. | loss: 1.2183 | lr: 0.010000
+[05.15.22|04:19:16] 	Iter 113000 Done. | loss: 1.4393 | lr: 0.010000
+[05.15.22|04:19:41] 	Iter 113100 Done. | loss: 1.7840 | lr: 0.010000
+[05.15.22|04:20:03] 	train_mean_loss: 1.6309767377619842
+[05.15.22|04:20:03] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch385_model.pt.
+[05.15.22|04:20:03] Training epoch: 386
+[05.15.22|04:20:06] 	Iter 113200 Done. | loss: 1.2841 | lr: 0.010000
+[05.15.22|04:20:32] 	Iter 113300 Done. | loss: 1.5454 | lr: 0.010000
+[05.15.22|04:20:57] 	Iter 113400 Done. | loss: 1.8437 | lr: 0.010000
+[05.15.22|04:21:17] 	train_mean_loss: 1.6369396176467947
+[05.15.22|04:21:17] Training epoch: 387
+[05.15.22|04:21:22] 	Iter 113500 Done. | loss: 1.3234 | lr: 0.010000
+[05.15.22|04:21:47] 	Iter 113600 Done. | loss: 1.5415 | lr: 0.010000
+[05.15.22|04:22:12] 	Iter 113700 Done. | loss: 1.8559 | lr: 0.010000
+[05.15.22|04:22:32] 	train_mean_loss: 1.6360129336921536
+[05.15.22|04:22:32] Training epoch: 388
+[05.15.22|04:22:38] 	Iter 113800 Done. | loss: 1.2719 | lr: 0.010000
+[05.15.22|04:23:03] 	Iter 113900 Done. | loss: 1.5912 | lr: 0.010000
+[05.15.22|04:23:28] 	Iter 114000 Done. | loss: 1.8108 | lr: 0.010000
+[05.15.22|04:23:46] 	train_mean_loss: 1.635889354206267
+[05.15.22|04:23:46] Training epoch: 389
+[05.15.22|04:23:53] 	Iter 114100 Done. | loss: 1.3250 | lr: 0.010000
+[05.15.22|04:24:18] 	Iter 114200 Done. | loss: 1.6618 | lr: 0.010000
+[05.15.22|04:24:43] 	Iter 114300 Done. | loss: 1.8912 | lr: 0.010000
+[05.15.22|04:25:00] 	train_mean_loss: 1.6366000787741473
+[05.15.22|04:25:00] Training epoch: 390
+[05.15.22|04:25:09] 	Iter 114400 Done. | loss: 1.2950 | lr: 0.010000
+[05.15.22|04:25:34] 	Iter 114500 Done. | loss: 1.6462 | lr: 0.010000
+[05.15.22|04:25:59] 	Iter 114600 Done. | loss: 1.7957 | lr: 0.010000
+[05.15.22|04:26:14] 	train_mean_loss: 1.6340983169419425
+[05.15.22|04:26:14] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch390_model.pt.
+[05.15.22|04:26:14] Training epoch: 391
+[05.15.22|04:26:25] 	Iter 114700 Done. | loss: 1.4138 | lr: 0.010000
+[05.15.22|04:26:49] 	Iter 114800 Done. | loss: 1.7583 | lr: 0.010000
+[05.15.22|04:27:15] 	Iter 114900 Done. | loss: 1.9010 | lr: 0.010000
+[05.15.22|04:27:28] 	train_mean_loss: 1.6402717098897817
+[05.15.22|04:27:28] Training epoch: 392
+[05.15.22|04:27:40] 	Iter 115000 Done. | loss: 1.3764 | lr: 0.010000
+[05.15.22|04:28:06] 	Iter 115100 Done. | loss: 1.6457 | lr: 0.010000
+[05.15.22|04:28:31] 	Iter 115200 Done. | loss: 1.9436 | lr: 0.010000
+[05.15.22|04:28:43] 	train_mean_loss: 1.6362619789279238
+[05.15.22|04:28:43] Training epoch: 393
+[05.15.22|04:28:56] 	Iter 115300 Done. | loss: 1.3907 | lr: 0.010000
+[05.15.22|04:29:21] 	Iter 115400 Done. | loss: 1.6607 | lr: 0.010000
+[05.15.22|04:29:46] 	Iter 115500 Done. | loss: 1.9736 | lr: 0.010000
+[05.15.22|04:29:56] 	train_mean_loss: 1.6350271267955805
+[05.15.22|04:29:56] Training epoch: 394
+[05.15.22|04:30:11] 	Iter 115600 Done. | loss: 1.4411 | lr: 0.010000
+[05.15.22|04:30:36] 	Iter 115700 Done. | loss: 1.6414 | lr: 0.010000
+[05.15.22|04:31:01] 	Iter 115800 Done. | loss: 1.9482 | lr: 0.010000
+[05.15.22|04:31:10] 	train_mean_loss: 1.62889399009497
+[05.15.22|04:31:10] Training epoch: 395
+[05.15.22|04:31:26] 	Iter 115900 Done. | loss: 1.3668 | lr: 0.010000
+[05.15.22|04:31:51] 	Iter 116000 Done. | loss: 1.6974 | lr: 0.010000
+[05.15.22|04:32:16] 	Iter 116100 Done. | loss: 1.9493 | lr: 0.010000
+[05.15.22|04:32:23] 	train_mean_loss: 1.6343008705547877
+[05.15.22|04:32:23] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch395_model.pt.
+[05.15.22|04:32:23] Training epoch: 396
+[05.15.22|04:32:41] 	Iter 116200 Done. | loss: 1.3916 | lr: 0.010000
+[05.15.22|04:33:07] 	Iter 116300 Done. | loss: 1.7150 | lr: 0.010000
+[05.15.22|04:33:32] 	Iter 116400 Done. | loss: 1.9425 | lr: 0.010000
+[05.15.22|04:33:38] 	train_mean_loss: 1.6327105517290077
+[05.15.22|04:33:38] Training epoch: 397
+[05.15.22|04:33:57] 	Iter 116500 Done. | loss: 1.3938 | lr: 0.010000
+[05.15.22|04:34:22] 	Iter 116600 Done. | loss: 1.7615 | lr: 0.010000
+[05.15.22|04:34:47] 	Iter 116700 Done. | loss: 1.9305 | lr: 0.010000
+[05.15.22|04:34:51] 	train_mean_loss: 1.6363938231857456
+[05.15.22|04:34:51] Training epoch: 398
+[05.15.22|04:35:12] 	Iter 116800 Done. | loss: 1.4983 | lr: 0.010000
+[05.15.22|04:35:37] 	Iter 116900 Done. | loss: 1.8153 | lr: 0.010000
+[05.15.22|04:36:03] 	Iter 117000 Done. | loss: 1.8357 | lr: 0.010000
+[05.15.22|04:36:05] 	train_mean_loss: 1.633387255425356
+[05.15.22|04:36:05] Training epoch: 399
+[05.15.22|04:36:28] 	Iter 117100 Done. | loss: 1.3871 | lr: 0.010000
+[05.15.22|04:36:53] 	Iter 117200 Done. | loss: 1.7459 | lr: 0.010000
+[05.15.22|04:37:18] 	Iter 117300 Done. | loss: 1.9259 | lr: 0.010000
+[05.15.22|04:37:19] 	train_mean_loss: 1.634290674916741
+[05.15.22|04:37:19] Training epoch: 400
+[05.15.22|04:37:43] 	Iter 117400 Done. | loss: 1.4592 | lr: 0.010000
+[05.15.22|04:38:09] 	Iter 117500 Done. | loss: 1.7567 | lr: 0.010000
+[05.15.22|04:38:34] 	train_mean_loss: 1.633610603355226
+[05.15.22|04:38:34] The model has been saved as ./data/ntu60_cv/sgclr_joint/pretext/epoch400_model.pt.
